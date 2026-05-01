@@ -1,0 +1,73 @@
+/**
+ * Homepage image paths.
+ *
+ * To enable an image:
+ *   1. Drop the file into `public/images/` with the filename shown.
+ *   2. Change `null` below to the matching path string.
+ *
+ * Until a value is set to a string, the section shows a striped placeholder.
+ * Recommended specs are listed for each.
+ */
+
+export const images = {
+  /**
+   * Hero — editorial portrait of a model wearing frames.
+   * 4:5 aspect, ~1200×1500px or larger. Warm tones to match palette.
+   * Drop file at: public/images/hero-model.jpg
+   */
+  heroPortrait: "/images/hero-model.jpg" as string | null,
+
+  /**
+   * Frames — featured (Etnia Barcelona).
+   * 5:4 aspect, ~1500×1200px. Detail or still life.
+   * Drop file at: public/images/frames-featured-etnia.jpg
+   */
+  framesFeatured: "/images/frames-featured.jpg" as string | null,
+
+  /**
+   * Frames — side stack 1 (STATE).
+   * Roughly 5:3 wide crop, ~900×540px+.
+   * Drop file at: public/images/frames-state.jpg
+   */
+  framesSide1: "/images/frames-state.jpg" as string | null,
+
+  /**
+   * Frames — side stack 2 (OVVO).
+   * Drop file at: public/images/frames-ovvo.jpg
+   */
+  framesSide2: null as string | null, // "/images/frames-ovvo.jpg"
+
+  /**
+   * Frames — side stack 3 (Maui Jim).
+   * Drop file at: public/images/frames-maui-jim.jpg
+   */
+  framesSide3: "/images/frames-maui-jim.jpg" as string | null,
+
+  /**
+   * Visit — storefront photo.
+   * 5:8 vertical, ~1000×1600px.
+   * Drop file at: public/images/storefront.jpg
+   */
+  storefront: "/images/storefront.jpg" as string | null,
+
+  /**
+   * Visit — left diptych photo (the frame wall / curated frames).
+   * 16:10 horizontal, ~1600×1000px.
+   * Drop file at: public/images/visit-frames.jpg
+   */
+  visitFrames: "/images/visit-frames.jpg" as string | null,
+
+  /**
+   * Visit — right diptych photo (exam room / the chair).
+   * 16:10 horizontal, ~1600×1000px.
+   * Drop file at: public/images/visit-exam-room.jpg
+   */
+  visitExamRoom: "/images/visit-exam-room.jpg" as string | null,
+
+  /**
+   * BookingCTA — full-bleed dark/atmospheric photo behind the CTA section.
+   * 16:9 or wider, 2000px+ (will be cropped to fit the section height).
+   * Drop file at: public/images/booking-cta-bg.jpg
+   */
+  bookingBackground: "/images/booking-cta-bg.jpg" as string | null,
+};
