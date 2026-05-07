@@ -86,4 +86,32 @@ export const images = {
    * Drop file at: public/images/contacts-accent.jpg
    */
   contactsAccent: null as string | null, // "/images/contacts-accent.jpg"
+
+  /**
+   * Eye Exams — parallax background for the Pediatric section.
+   * 16:9 or wider, 2000px+. Soft, family-warm tone (e.g., child being examined).
+   * Drop file at: public/images/eye-exams-pediatric.jpg
+   */
+  eyeExamsPediatric: null as string | null, // "/images/eye-exams-pediatric.jpg"
+
+  /**
+   * Eye Exams — accent image for the Technology section.
+   * 4:3 horizontal, ~1600×1200px. Equipment detail (Optomap monitor, slit lamp, phoropter).
+   * Drop file at: public/images/eye-exams-technology.jpg
+   */
+  eyeExamsTechnology: null as string | null, // "/images/eye-exams-technology.jpg"
+
+  /**
+   * Eye Exams — diptych left (the exam room / chair).
+   * 16:10 horizontal, ~1600×1000px.
+   * Drop file at: public/images/eye-exams-exam-room.jpg
+   */
+  eyeExamsExamRoom: null as string | null, // "/images/eye-exams-exam-room.jpg"
+
+  /**
+   * Eye Exams — diptych right (pretest area / Optomap or autorefractor in use).
+   * 16:10 horizontal, ~1600×1000px.
+   * Drop file at: public/images/eye-exams-pretest.jpg
+   */
+  eyeExamsPretest: null as string | null, // "/images/eye-exams-pretest.jpg"
 };
