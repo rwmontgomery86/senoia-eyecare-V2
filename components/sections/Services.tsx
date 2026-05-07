@@ -27,7 +27,7 @@ export default function Services() {
           {services.map((s, i) => (
             <FadeUp key={s.slug} delay={0.05 * i} y={20}>
               <Link
-                href={`/services/${s.slug}`}
+                href={s.href ?? `/services/${s.slug}`}
                 aria-label={`${s.title} — learn more`}
                 className="group relative grid grid-cols-[40px_1fr] gap-x-6 gap-y-2 border-t border-rule py-7 transition-colors duration-300 ease-expo hover:bg-paper md:grid-cols-[60px_1fr_auto] md:gap-x-8 md:items-baseline md:px-4 md:-mx-4"
               >

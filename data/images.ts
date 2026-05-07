@@ -70,4 +70,20 @@ export const images = {
    * Drop file at: public/images/booking-cta-bg.jpg
    */
   bookingBackground: "/images/booking-cta-bg.jpg" as string | null,
+
+  /**
+   * Contacts page — hero portrait. Editorial close-up of someone wearing
+   * (or holding) a contact lens. Calm, warm-toned to match the palette.
+   * 4:5 vertical, ~1200×1500px or larger.
+   * Drop file at: public/images/contacts-hero.jpg
+   */
+  contactsHero: null as string | null, // "/images/contacts-hero.jpg"
+
+  /**
+   * Contacts page — mid-page accent (alongside the fitting process).
+   * Could be a clinical detail (topographer, slit lamp) or a quiet still life.
+   * 16:10 horizontal, ~1600×1000px.
+   * Drop file at: public/images/contacts-accent.jpg
+   */
+  contactsAccent: null as string | null, // "/images/contacts-accent.jpg"
 };

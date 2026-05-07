@@ -3,6 +3,30 @@ export type Service = {
   number: string;
   title: string;
   summary: string;
+  href?: string;
+};
+
+export type LensType = {
+  number: string;
+  title: string;
+  tag: string;
+  summary: string;
+};
+
+export type FittingStep = {
+  number: string;
+  title: string;
+  body: string;
+};
+
+export type ContactLensBrand = {
+  name: string;
+  tag: string;
+};
+
+export type Faq = {
+  question: string;
+  answer: string;
 };
 
 export type Brand = {

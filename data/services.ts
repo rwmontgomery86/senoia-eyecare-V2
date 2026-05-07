@@ -9,11 +9,12 @@ export const services: Service[] = [
       "Annual evaluations using advanced retinal imaging — for vision, ocular health, and what's beneath. Forty-five unhurried minutes.",
   },
   {
-    slug: "specialty-contacts",
+    slug: "contact-lens-fitting",
     number: "02",
-    title: "Specialty Contacts",
+    title: "Contact Lens Fitting",
     summary:
-      "Scleral, multifocal, and custom-fit contacts for difficult prescriptions. We treat the fitting process as the craft it is.",
+      "Soft, toric, and multifocal lenses fit to the eye in front of us — not assumed from your glasses prescription. New wearers welcome.",
+    href: "/contacts",
   },
   {
     slug: "dry-eye-therapy",
