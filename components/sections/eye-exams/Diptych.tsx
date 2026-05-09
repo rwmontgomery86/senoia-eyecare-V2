@@ -12,7 +12,7 @@ export default function Diptych() {
             aspect="16/10"
             angle={45}
             caption="[ THE EXAM ROOM — 16:10 ]"
-            bottomLeft="eye-exams-exam-room.jpg"
+            bottomLeft="eye-exams/visit-exam-room.jpg"
             bottomRight="Plate №01"
             image={images.eyeExamsExamRoom}
             imageAlt={`Exam room at ${site.name}`}
@@ -27,7 +27,7 @@ export default function Diptych() {
             aspect="16/10"
             angle={120}
             caption="[ PRETEST — 16:10 ]"
-            bottomLeft="eye-exams-pretest.jpg"
+            bottomLeft="eye-exams/pre-testing.jpg"
             bottomRight="Plate №02"
             image={images.eyeExamsPretest}
             imageAlt={`Pretest area at ${site.name}`}
