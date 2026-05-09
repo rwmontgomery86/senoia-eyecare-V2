@@ -36,6 +36,15 @@ export type Testimonial = {
   note?: string;
 };
 
+export type Doctor = {
+  slug: string;
+  name: string;
+  credentials: string;
+  role: string;
+  oneLiner: string;
+  photo: string;
+};
+
 export type SiteConfig = {
   name: string;
   tagline: string;
