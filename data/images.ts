@@ -44,6 +44,22 @@ export const images = {
   framesSide3: "/images/frames-maui-jim.jpg" as string | null,
 
   /**
+   * Frames page — Styling / fitting band.
+   * Optician helping a patient try on frames. Hands-on detail.
+   * 4:5 vertical, ~1200×1500px+.
+   * Drop file at: public/images/frames/frames-styling.jpg
+   */
+  framesStyling: null as string | null,
+
+  /**
+   * Frames page — Sunglasses band.
+   * Polarized lens / sunglasses still life or on-figure.
+   * 4:5 vertical, ~1200×1500px+.
+   * Drop file at: public/images/frames/frames-sunglasses.jpg
+   */
+  framesSunglasses: null as string | null,
+
+  /**
    * Visit — storefront photo.
    * 5:8 vertical, ~1000×1600px.
    * Drop file at: public/images/storefront.jpg
