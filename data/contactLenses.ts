@@ -1,4 +1,4 @@
-import type { ContactLensBrand, Faq, FittingStep, LensType } from "./types";
+import type { Faq, FittingStep, LensType } from "./types";
 
 export const lensTypes: LensType[] = [
   {
@@ -45,14 +45,6 @@ export const fittingSteps: FittingStep[] = [
     title: "Follow-up.",
     body: "We see you back to confirm fit and finalize the prescription. From there, we order your supply and walk through insertion, removal, and care if you're new to wearing.",
   },
-];
-
-export const contactLensBrands: ContactLensBrand[] = [
-  { name: "Acuvue", tag: "Daily & monthly" },
-  { name: "Biofinity", tag: "Monthly" },
-  { name: "Dailies", tag: "Daily disposable" },
-  { name: "Bausch + Lomb", tag: "Daily & monthly" },
-  { name: "CooperVision", tag: "Toric & multifocal" },
 ];
 
 export const faq: Faq[] = [

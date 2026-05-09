@@ -19,11 +19,6 @@ export type FittingStep = {
   body: string;
 };
 
-export type ContactLensBrand = {
-  name: string;
-  tag: string;
-};
-
 export type Faq = {
   question: string;
   answer: string;
