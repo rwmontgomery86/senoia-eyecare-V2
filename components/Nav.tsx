@@ -11,7 +11,7 @@ const links = [
   { href: "/eye-exams", label: "Eye Exams" },
   { href: "/contacts", label: "Contacts" },
   { href: "/insurance", label: "Insurance" },
-  { href: "/visit", label: "Visit" },
+  { href: "/team", label: "Team" },
 ];
 
 export default function Nav() {

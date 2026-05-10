@@ -93,8 +93,8 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/visit" className="transition-colors duration-200 ease-expo hover:text-accent">
-                  Visit
+                <Link href="/team" className="transition-colors duration-200 ease-expo hover:text-accent">
+                  Team
                 </Link>
               </li>
               <li>

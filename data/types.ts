@@ -45,6 +45,14 @@ export type Doctor = {
   photo: string;
 };
 
+export type StaffMember = {
+  slug: string;
+  name: string;
+  role: string;
+  oneLiner: string;
+  photo: string | null;
+};
+
 export type SiteConfig = {
   name: string;
   tagline: string;
