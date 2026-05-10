@@ -1,3 +1,8 @@
+"use client";
+
+import { useRef } from "react";
+import Image from "next/image";
+import { motion, useScroll, useTransform } from "motion/react";
 import Eyebrow from "@/components/ui/Eyebrow";
 import WordReveal from "@/components/ui/WordReveal";
 import FadeUp from "@/components/ui/FadeUp";
@@ -17,6 +22,13 @@ const featuredFrame = {
 };
 
 export default function FramesPage() {
+  const ctaRef = useRef<HTMLElement>(null);
+  const { scrollYProgress } = useScroll({
+    target: ctaRef,
+    offset: ["start end", "end start"],
+  });
+  const ctaBgY = useTransform(scrollYProgress, [0, 1], ["-10%", "10%"]);
+
   return (
     <div className="bg-paper">
       {/* 1 — Intro band */}
@@ -253,8 +265,44 @@ export default function FramesPage() {
       </section>
 
       {/* 6 — CTA */}
-      <section className="bg-ink px-6 py-28 text-inverted-text md:px-10 md:py-36 lg:px-16 lg:py-44">
-        <div className="mx-auto max-w-[1080px]">
+      <section
+        ref={ctaRef}
+        className="relative isolate overflow-hidden bg-ink px-6 py-32 text-inverted-text md:px-10 md:py-44 lg:px-16 lg:py-52"
+      >
+        {/* Striped fallback (visible if no image set) */}
+        <div
+          aria-hidden
+          className="absolute inset-0 -inset-y-16 opacity-50"
+          style={{
+            background:
+              "repeating-linear-gradient(135deg, #3a332e 0 14px, #4a423d 14px 15px)",
+          }}
+        />
+
+        {/* Parallax bg image */}
+        {images.bookingBackground ? (
+          <motion.div
+            style={{ y: ctaBgY }}
+            className="absolute inset-0 -inset-y-16 opacity-60"
+          >
+            <Image
+              src={images.bookingBackground}
+              alt=""
+              fill
+              sizes="100vw"
+              quality={85}
+              className="object-cover object-center"
+            />
+          </motion.div>
+        ) : null}
+
+        {/* Dark overlay for legibility */}
+        <div
+          aria-hidden
+          className="absolute inset-0 bg-gradient-to-b from-ink/85 via-ink/70 to-ink/95"
+        />
+
+        <div className="relative mx-auto max-w-[1080px]">
           <Eyebrow tone="accent" symbol={null}>
             Come see them
           </Eyebrow>
