@@ -58,6 +58,7 @@ export type SiteConfig = {
   tagline: string;
   url: string;
   bookingUrl: string;
+  marloUrl: string;
   mapEmbedUrl: string;
   phone: { display: string; tel: string };
   fax: string;

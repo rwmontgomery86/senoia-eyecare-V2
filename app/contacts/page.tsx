@@ -1,4 +1,5 @@
 import ContactsHero from "@/components/sections/contacts/ContactsHero";
+import MarloReorder from "@/components/sections/contacts/marlo-variants/VariantPhotoSplit";
 import LensTypes from "@/components/sections/contacts/LensTypes";
 import FittingProcess from "@/components/sections/contacts/FittingProcess";
 import ContactBrands from "@/components/sections/contacts/ContactBrands";
@@ -15,6 +16,7 @@ export default function ContactsPage() {
   return (
     <>
       <ContactsHero />
+      <MarloReorder />
       <LensTypes />
       <FittingProcess />
       <ContactBrands />

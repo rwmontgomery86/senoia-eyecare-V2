@@ -83,8 +83,13 @@ export default function ContactsHero() {
               >
                 Book a Fitting
               </Button>
-              <Button href="#process" variant="outlined-light" size="md">
-                What to Expect
+              <Button
+                href={site.marloUrl}
+                external
+                variant="outlined-light"
+                size="md"
+              >
+                Reorder on Marlo
               </Button>
             </motion.div>
           </motion.div>
