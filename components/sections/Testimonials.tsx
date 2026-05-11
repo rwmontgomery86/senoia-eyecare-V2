@@ -1,187 +1,93 @@
-"use client";
+import FadeUp from "@/components/ui/FadeUp";
 
-import { motion, useAnimation, useMotionValue } from "motion/react";
-import { useRef, useState, useEffect, useCallback } from "react";
-import Eyebrow from "@/components/ui/Eyebrow";
-import GoldRule from "@/components/ui/GoldRule";
-import WordReveal from "@/components/ui/WordReveal";
-import { testimonials } from "@/data/testimonials";
+const RATING = 4.9;
+const REVIEW_COUNT = 129;
+// TODO: add googleReviewsUrl to data/site.ts once the Google Business profile URL is provided.
+const GOOGLE_REVIEWS_URL = "#";
 
-const SLIDE_INTERVAL_MS = 6000;
-const SLIDE_EASE = [0.16, 1, 0.3, 1] as const;
-const SLIDE_DURATION = 1.1;
+const quotes = [
+  {
+    text: "Vicki did an awesome job helping us pick out our glasses.",
+    name: "Brian R.",
+  },
+  {
+    text: "Dr. Montgomery looks at you and listens intently.",
+    name: "Janie M.",
+  },
+  {
+    text: "They took the time to explain my condition, answering all my questions.",
+    name: "Bruce R.",
+  },
+];
 
 export default function Testimonials() {
-  const containerRef = useRef<HTMLDivElement>(null);
-  const trackRef = useRef<HTMLDivElement>(null);
-  const controls = useAnimation();
-  const x = useMotionValue(0);
-
-  const [drag, setDrag] = useState(0);
-  const [cardStep, setCardStep] = useState(0);
-  const [index, setIndex] = useState(0);
-  const [isPaused, setIsPaused] = useState(false);
-  const [prefersReducedMotion, setPrefersReducedMotion] = useState(false);
-
-  useEffect(() => {
-    const measure = () => {
-      if (!containerRef.current || !trackRef.current) return;
-      const c = containerRef.current.offsetWidth;
-      const t = trackRef.current.scrollWidth;
-      setDrag(Math.max(0, t - c));
-
-      const firstCard = trackRef.current.querySelector(
-        "figure",
-      ) as HTMLElement | null;
-      if (firstCard && trackRef.current.children.length > 1) {
-        const second = trackRef.current.children[1] as HTMLElement;
-        setCardStep(second.offsetLeft - firstCard.offsetLeft);
-      } else if (firstCard) {
-        setCardStep(firstCard.offsetWidth);
-      }
-    };
-    measure();
-    window.addEventListener("resize", measure);
-    return () => window.removeEventListener("resize", measure);
-  }, []);
-
-  useEffect(() => {
-    if (typeof window === "undefined") return;
-    const mq = window.matchMedia("(prefers-reduced-motion: reduce)");
-    const update = () => setPrefersReducedMotion(mq.matches);
-    update();
-    mq.addEventListener("change", update);
-    return () => mq.removeEventListener("change", update);
-  }, []);
-
-  const slideTo = useCallback(
-    (next: number) => {
-      if (cardStep <= 0) return;
-      const maxIndex = Math.max(
-        0,
-        Math.min(testimonials.length - 1, Math.floor(drag / cardStep)),
-      );
-      const target = next > maxIndex ? 0 : next;
-      setIndex(target);
-      controls.start({
-        x: -target * cardStep,
-        transition: { duration: SLIDE_DURATION, ease: SLIDE_EASE },
-      });
-    },
-    [cardStep, drag, controls],
-  );
-
-  useEffect(() => {
-    if (prefersReducedMotion) return;
-    if (isPaused) return;
-    if (cardStep <= 0) return;
-    const id = window.setInterval(() => {
-      slideTo(index + 1);
-    }, SLIDE_INTERVAL_MS);
-    return () => window.clearInterval(id);
-  }, [index, isPaused, cardStep, prefersReducedMotion, slideTo]);
-
-  const handleDragEnd = () => {
-    if (cardStep > 0) {
-      const current = x.get();
-      const nearest = Math.round(-current / cardStep);
-      const maxIndex = Math.max(
-        0,
-        Math.min(testimonials.length - 1, Math.floor(drag / cardStep)),
-      );
-      const clamped = Math.max(0, Math.min(maxIndex, nearest));
-      setIndex(clamped);
-      controls.start({
-        x: -clamped * cardStep,
-        transition: { duration: 0.6, ease: SLIDE_EASE },
-      });
-    }
-    setIsPaused(false);
-  };
-
   return (
     <section
       id="words"
-      className="relative overflow-hidden bg-cream py-24 md:py-32 lg:py-40"
+      className="bg-cream px-6 py-20 md:px-10 md:py-28 lg:px-16"
     >
-      <div className="mx-auto max-w-[1440px] px-6 md:px-10 lg:px-16">
-        <div className="flex flex-col gap-4">
-          <GoldRule width="6rem" />
-          <Eyebrow symbol={null}>In their words</Eyebrow>
-          <h2 className="mt-2 max-w-3xl font-display font-medium leading-[1] text-[clamp(2.5rem,5vw,3.75rem)]">
-            <WordReveal
-              as="span"
-              segments={[
-                { text: "What our patients" },
-                { text: "say.", italic: true, className: "text-accent" },
-              ]}
-              className="block"
-            />
-          </h2>
+      <div className="mx-auto max-w-[1240px]">
+        <FadeUp y={20}>
+          <div className="flex flex-col items-center text-center">
+            <Stars label={`${RATING} out of 5 stars`} />
+            <a
+              href={GOOGLE_REVIEWS_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group mt-5 inline-flex items-baseline gap-3 font-display text-[clamp(1.25rem,2vw,1.625rem)] text-ink transition-colors duration-200 ease-expo hover:text-accent"
+            >
+              <span>
+                <span className="font-medium">{RATING.toFixed(1)}</span>
+                <span className="text-ink/55">
+                  {" "}
+                  from {REVIEW_COUNT}+ Google reviews
+                </span>
+              </span>
+              <span
+                aria-hidden
+                className="font-mono text-[12px] tracking-eyebrow transition-transform duration-200 ease-expo group-hover:translate-x-1"
+              >
+                →
+              </span>
+            </a>
+          </div>
+        </FadeUp>
+
+        <div
+          aria-hidden
+          className="mx-auto mt-12 h-px w-16 bg-accent md:mt-14"
+        />
+
+        <div className="mt-12 grid grid-cols-1 gap-10 md:mt-14 md:grid-cols-3 md:gap-10 lg:gap-14">
+          {quotes.map((q, i) => (
+            <FadeUp key={q.name} y={20} delay={i * 0.08}>
+              <figure className="flex flex-col border-t border-rule pt-8">
+                <blockquote className="font-display text-[19px] italic leading-[1.5] text-ink/85 lg:text-[20px]">
+                  &ldquo;{q.text}&rdquo;
+                </blockquote>
+                <figcaption className="mt-6 font-mono text-[10px] uppercase tracking-eyebrow text-muted">
+                  <span className="text-ink/75">— {q.name}</span>
+                  <span className="ml-2 text-ink/45">· Google</span>
+                </figcaption>
+              </figure>
+            </FadeUp>
+          ))}
         </div>
       </div>
-
-      <div
-        ref={containerRef}
-        className="mt-14 cursor-grab overflow-hidden md:mt-20"
-        onMouseEnter={() => setIsPaused(true)}
-        onMouseLeave={() => setIsPaused(false)}
-      >
-        <motion.div
-          ref={trackRef}
-          drag="x"
-          dragConstraints={{ left: -drag, right: 0 }}
-          dragElastic={0.08}
-          whileTap={{ cursor: "grabbing" }}
-          animate={controls}
-          style={{ x }}
-          onDragStart={() => setIsPaused(true)}
-          onDragEnd={handleDragEnd}
-          className="flex w-max gap-6 px-6 md:gap-10 md:px-10 lg:px-16"
-        >
-          {testimonials.map((q, i) => (
-            <motion.figure
-              key={i}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, amount: 0.3 }}
-              transition={{
-                duration: 1,
-                delay: i * 0.08,
-                ease: [0.16, 1, 0.3, 1],
-              }}
-              className="flex w-[80vw] max-w-[560px] flex-col border-t border-accent/50 bg-paper p-10 md:w-[440px] md:p-12 lg:w-[520px] lg:p-14"
-            >
-              <div
-                aria-label="5 out of 5 stars"
-                className="flex items-center gap-1.5 text-accent"
-              >
-                {Array.from({ length: 5 }).map((_, s) => (
-                  <Star key={s} />
-                ))}
-              </div>
-
-              <blockquote className="mt-10 font-display text-xl italic leading-relaxed text-ink/85 md:text-2xl md:leading-relaxed">
-                &ldquo;{q.text}&rdquo;
-              </blockquote>
-
-              <figcaption className="mt-12 font-mono text-[11px] uppercase tracking-eyebrow text-accent">
-                <span aria-hidden>—&nbsp;</span>
-                <span className="text-ink/70">{q.name}</span>
-                {q.note && (
-                  <span className="ml-2 text-ink/45">· {q.note}</span>
-                )}
-              </figcaption>
-            </motion.figure>
-          ))}
-        </motion.div>
-      </div>
-
-      <div className="mx-auto mt-10 flex max-w-[1440px] items-center gap-3 px-6 font-mono text-[10px] uppercase tracking-eyebrow text-ink/40 md:px-10 lg:px-16">
-        <span className="block h-px w-8 bg-ink/30" />
-        Drag to read more
-      </div>
     </section>
+  );
+}
+
+function Stars({ label }: { label: string }) {
+  return (
+    <div
+      aria-label={label}
+      className="flex items-center gap-2 text-accent"
+    >
+      {Array.from({ length: 5 }).map((_, s) => (
+        <Star key={s} />
+      ))}
+    </div>
   );
 }
 
@@ -189,8 +95,8 @@ function Star() {
   return (
     <svg
       aria-hidden
-      width="14"
-      height="14"
+      width="18"
+      height="18"
       viewBox="0 0 24 24"
       fill="currentColor"
       className="shrink-0"
