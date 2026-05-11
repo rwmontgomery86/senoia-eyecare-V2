@@ -7,7 +7,6 @@ import { AnimatePresence, motion } from "motion/react";
 import { site } from "@/data/site";
 
 const links = [
-  { href: "/frames", label: "Frames" },
   { href: "/eye-exams", label: "Eye Exams" },
   { href: "/contacts", label: "Contacts" },
   { href: "/insurance", label: "Insurance" },

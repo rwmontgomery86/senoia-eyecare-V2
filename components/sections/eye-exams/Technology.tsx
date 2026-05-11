@@ -59,7 +59,7 @@ export default function Technology() {
             aspect="4/3"
             angle={75}
             caption="[ EQUIPMENT DETAIL — 4:3 ]"
-            bottomLeft="eye-exams/equipment-detail.jpg"
+            bottomLeft={images.eyeExamsTechnology ? undefined : "eye-exams/equipment-detail.jpg"}
             bottomRight="Plate №03"
             image={images.eyeExamsTechnology}
             imageAlt={`Diagnostic equipment at ${site.name}`}
