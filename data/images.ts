@@ -130,4 +130,25 @@ export const images = {
    * Drop file at: public/images/eye-exams/pre-testing.jpg
    */
   eyeExamsPretest: "/images/eye-exams/pre-testing.jpg" as string | null,
+
+  /**
+   * Homepage hero — full-bleed photo with text overlay.
+   * Mobile: portrait crop. Desktop: landscape crop.
+   * Drop file at: public/images/hero/hero-mobile.jpg
+   *               public/images/hero/hero-desktop.jpg
+   */
+  heroMobile: "/images/hero/hero-mobile.jpg" as string | null,
+  heroDesktop: "/images/hero/hero-desktop.jpg" as string | null,
+
+  /**
+   * Lookbook library — editorial photography ported from the previous site.
+   * Available for use in Frames, About, or other sections; not currently
+   * referenced by the homepage hero.
+   */
+  lookbookTallModel: "/images/hero/lookbook-1-tall-model.jpg" as string | null,
+  lookbookMacro1: "/images/hero/lookbook-2-square-macro.jpg" as string | null,
+  lookbookCouple: "/images/hero/lookbook-3-portrait-couple.jpg" as string | null,
+  lookbookInterior: "/images/hero/lookbook-4-landscape-interior.jpg" as string | null,
+  lookbookMacro2: "/images/hero/lookbook-5-square-macro.jpg" as string | null,
+  lookbookPortrait: "/images/hero/lookbook-6-portrait-model.jpg" as string | null,
 };
