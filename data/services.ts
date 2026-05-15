@@ -23,5 +23,6 @@ export const services: Service[] = [
     title: "Pediatric & Family",
     summary:
       "Gentle, thorough exams for the youngest patients, with sight-development tracking from age three. Parents in the room, no rushing.",
+    href: "/pediatric-family",
   },
 ];

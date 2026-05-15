@@ -19,6 +19,7 @@ export default function StripedPlaceholder({
   priority = false,
   sizes,
   zoomOnHover = false,
+  objectPosition,
 }: {
   aspect?: string;
   angle?: number;
@@ -42,6 +43,10 @@ export default function StripedPlaceholder({
    * When true, the image scales up subtly on hover of the nearest `group` ancestor.
    */
   zoomOnHover?: boolean;
+  /**
+   * CSS object-position for the image (e.g. "70% center"). Defaults to center.
+   */
+  objectPosition?: string;
 }) {
   const stripeA = tone === "light" ? "#f6f1e8" : "#3a332e";
   const stripeB = tone === "light" ? "#e6dec9" : "#4a423d";
@@ -49,7 +54,7 @@ export default function StripedPlaceholder({
 
   return (
     <div
-      className={`relative overflow-hidden ${className}`}
+      className={`relative w-full max-w-full overflow-hidden ${className}`}
       style={{
         aspectRatio: aspect,
         background: `repeating-linear-gradient(${angle}deg, ${stripeA} 0 14px, ${stripeB} 14px 15px)`,
@@ -62,7 +67,8 @@ export default function StripedPlaceholder({
           fill
           priority={priority}
           sizes={sizes ?? "100vw"}
-          className={`object-cover object-center transition-transform duration-[1200ms] ease-expo ${zoomOnHover ? "group-hover:scale-[1.04]" : ""}`}
+          style={objectPosition ? { objectPosition } : undefined}
+          className={`object-cover ${objectPosition ? "" : "object-center"} transition-transform duration-[1200ms] ease-expo ${zoomOnHover ? "group-hover:scale-[1.04]" : ""}`}
         />
       ) : null}
 

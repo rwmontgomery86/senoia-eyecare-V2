@@ -190,6 +190,43 @@ export const images = {
   heroDesktop: "/images/hero/hero-desktop.jpg" as string | null,
 
   /**
+   * Pediatric & Family variants sandbox — V1 (Editorial split) left hero portrait.
+   * 3:4 vertical, ~1200×1600px. Child mid-exam or trying frames; warm, calm.
+   * Drop file at: public/images/pediatric-family/hero-portrait.jpg
+   */
+  pedFamHeroPortrait: null as string | null,
+
+  /**
+   * Pediatric & Family variants sandbox — V2 (Typographic) single mid-page band.
+   * 21:9 horizontal, ~2400×1030px. Quiet wide editorial shot.
+   * Drop file at: public/images/pediatric-family/hero-band.jpg
+   */
+  pedFamHeroBand: null as string | null,
+
+  /**
+   * Pediatric & Family — V3 (Story timeline) chapter-opener.
+   * 16:9 or wider, 2000px+. Editorial, warm, family-coded.
+   * File: public/images/pediatric/story-hero.jpg
+   */
+  pedFamStoryHero: "/images/pediatric/story-hero.jpg" as string | null,
+
+  /**
+   * Pediatric & Family — V3 three age-stage images.
+   * 3:4 vertical, ~1200×1600px each.
+   * Files: public/images/pediatric/age-3.jpg, age-6-10.jpg, age-11-17.jpg
+   */
+  pedFamAge3: "/images/pediatric/age-3.jpg" as string | null,
+  pedFamAge6to10: "/images/pediatric/age-6-10.jpg" as string | null,
+  pedFamAge11to17: "/images/pediatric/age-11-17.jpg" as string | null,
+
+  /**
+   * Pediatric & Family — V3 family-beat inset.
+   * 16:10 horizontal, ~1600×1000px. Adults / waiting room / multi-gen.
+   * File: public/images/pediatric/family-inset.jpg
+   */
+  pedFamFamilyInset: "/images/pediatric/family-inset.jpg" as string | null,
+
+  /**
    * Lookbook library — editorial photography ported from the previous site.
    * Available for use in Frames, About, or other sections; not currently
    * referenced by the homepage hero.
