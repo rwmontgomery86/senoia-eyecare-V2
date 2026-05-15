@@ -44,6 +44,24 @@ export const images = {
   framesSide3: "/images/frames-maui-jim.jpg" as string | null,
 
   /**
+   * /frames page — Maui Jim feature "Three things" pillars (Place / Light / Fit).
+   * 3:4 vertical, 1200×1600px+. Editorial / warm.
+   * Drop files at: public/images/featured/maui-jim/{place,light,fit}-maui.jpg
+   */
+  mauiJimPlace: "/images/featured/maui-jim/place-maui.jpg" as string | null,
+  mauiJimLight: "/images/featured/maui-jim/light-maui.jpg" as string | null,
+  mauiJimFit: "/images/featured/maui-jim/fit-maui.jpg" as string | null,
+
+  /**
+   * /frames page — Maui Jim PolarizedPlus2 3-up model grid.
+   * 4:5 vertical, 1200×1500px+. Product shots.
+   * Drop files at: public/images/featured/maui-jim/{hiehie,kaulike,Hookipa}.jpg
+   */
+  mauiJimHiehie: "/images/featured/maui-jim/hiehie.jpg" as string | null,
+  mauiJimKaulike: "/images/featured/maui-jim/kaulike.jpg" as string | null,
+  mauiJimHookipa: "/images/featured/maui-jim/Hookipa.jpg" as string | null,
+
+  /**
    * Frames-variants sandbox — Maui Jim portrait (V02 magazine split, left top).
    * 3:4 vertical, ~1200×1600px. Lifestyle / wearer in sunwear.
    * Drop file at: public/images/frames/maui-jim-portrait.jpg
@@ -69,10 +87,10 @@ export const images = {
   /**
    * Frames page — Styling / fitting band.
    * Optician helping a patient try on frames. Hands-on detail.
-   * 4:5 vertical, ~1200×1500px+.
-   * Drop file at: public/images/frames/frames-styling.jpg
+   * 16:10 horizontal, ~1200×750px+.
+   * Drop file at: public/images/featured/maui-jim/styling-fit.jpg
    */
-  framesStyling: null as string | null,
+  framesStyling: "/images/featured/maui-jim/styling-fit.jpg" as string | null,
 
   /**
    * Frames page — Sunglasses band.

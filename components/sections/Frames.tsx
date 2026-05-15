@@ -29,15 +29,9 @@ const ledger = [
 ];
 
 const grid = [
-  { label: "Model № 01", angle: 30 },
-  { label: "Model № 02", angle: 75 },
-  { label: "Model № 03", angle: 120 },
-] as const;
-
-const gridImages = [
-  "mauiJimModel1",
-  "mauiJimModel2",
-  "mauiJimModel3",
+  { label: "HieHie", angle: 30, image: "mauiJimHiehie" },
+  { label: "Kaulike", angle: 75, image: "mauiJimKaulike" },
+  { label: "Ho‘okipa", angle: 120, image: "mauiJimHookipa" },
 ] as const;
 
 export default function Frames() {
@@ -169,7 +163,7 @@ export default function Frames() {
                   <StripedPlaceholder
                     aspect="4/5"
                     angle={cell.angle}
-                    image={images[gridImages[i]]}
+                    image={images[cell.image]}
                     imageAlt={`Maui Jim ${cell.label}`}
                     sizes="33vw"
                     zoomOnHover
