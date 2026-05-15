@@ -44,6 +44,29 @@ export const images = {
   framesSide3: "/images/frames-maui-jim.jpg" as string | null,
 
   /**
+   * Frames-variants sandbox — Maui Jim portrait (V02 magazine split, left top).
+   * 3:4 vertical, ~1200×1600px. Lifestyle / wearer in sunwear.
+   * Drop file at: public/images/frames/maui-jim-portrait.jpg
+   */
+  mauiJimPortrait: null as string | null,
+
+  /**
+   * Frames-variants sandbox — Maui Jim detail (V02 magazine split, left bottom inset).
+   * 4:5 vertical, ~1200×1500px. Lens / polarized detail or close-up.
+   * Drop file at: public/images/frames/maui-jim-detail.jpg
+   */
+  mauiJimDetail: null as string | null,
+
+  /**
+   * Frames-variants sandbox — Maui Jim product grid (V03 typographic poster, 3-up).
+   * 4:5 vertical, ~1200×1500px each. Frame shots, one per model.
+   * Drop files at: public/images/frames/maui-jim-model-1.jpg, -2.jpg, -3.jpg
+   */
+  mauiJimModel1: null as string | null,
+  mauiJimModel2: null as string | null,
+  mauiJimModel3: null as string | null,
+
+  /**
    * Frames page — Styling / fitting band.
    * Optician helping a patient try on frames. Hands-on detail.
    * 4:5 vertical, ~1200×1500px+.
