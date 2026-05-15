@@ -127,6 +127,14 @@ export const images = {
   contactsAccent: "/images/contact-lens/contacts-accent.jpg" as string | null,
 
   /**
+   * Contacts page — Marlo reorder section (existing patients).
+   * Macro of a contact lens / case / fingertip, or quiet brand still life.
+   * 4:3 horizontal, ~1600×1200px.
+   * Drop file at: public/images/contact-lens/marlo.jpg
+   */
+  contactsMarlo: "/images/contact-lens/marlo.jpg" as string | null,
+
+  /**
    * Eye Exams — parallax background for the Pediatric section.
    * 16:9 or wider, 2000px+. Soft, family-warm tone (e.g., child being examined).
    * Drop file at: public/images/eye-exams/childrens-exams.jpg

@@ -4,6 +4,7 @@ import Button from "@/components/ui/Button";
 import WordReveal from "@/components/ui/WordReveal";
 import StripedPlaceholder from "@/components/ui/StripedPlaceholder";
 import { site } from "@/data/site";
+import { images } from "@/data/images";
 
 export default function VariantPhotoSplit() {
   return (
@@ -49,9 +50,9 @@ export default function VariantPhotoSplit() {
             aspect="4/3"
             angle={135}
             tone="light"
-            caption="[ MACRO — lens case / fingertip ]"
-            bottomLeft="Plate №07"
-            bottomRight="Marlo"
+            image={images.contactsMarlo}
+            imageAlt="Marlo contact lens reorder app on a phone"
+            sizes="(min-width: 768px) 45vw, 100vw"
           />
         </FadeUp>
       </div>
