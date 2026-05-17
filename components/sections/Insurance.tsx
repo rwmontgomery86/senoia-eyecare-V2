@@ -32,8 +32,8 @@ export default function Insurance() {
               plan listed? Call us at{" "}
               <a href={`tel:${site.phone.tel}`} className="text-inverted-text underline-offset-4 hover:underline">
                 {site.phone.display}
-              </a>{" "}
-              — we&apos;ll verify your benefits before your visit.
+              </a>
+              . We&apos;ll verify your benefits before your visit.
             </p>
           </FadeUp>
         </div>

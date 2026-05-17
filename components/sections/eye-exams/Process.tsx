@@ -15,7 +15,7 @@ const steps = [
     number: "02",
     title: "The exam",
     body:
-      "One-on-one time with the doctor, no rush. We measure your prescription, evaluate the health of your eyes inside and out, and walk through the findings with you in plain language. Most exams take 30–45 minutes.",
+      "One-on-one time with the doctor, no rush. We measure your prescription, evaluate the health of your eyes inside and out, and walk through the findings with you in plain language.",
   },
   {
     number: "03",

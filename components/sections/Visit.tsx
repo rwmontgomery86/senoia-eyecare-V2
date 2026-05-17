@@ -3,6 +3,7 @@ import WordReveal from "@/components/ui/WordReveal";
 import FadeUp from "@/components/ui/FadeUp";
 import StripedPlaceholder from "@/components/ui/StripedPlaceholder";
 import Button from "@/components/ui/Button";
+import MapsLink from "@/components/ui/MapsLink";
 import { site } from "@/data/site";
 import { images } from "@/data/images";
 
@@ -70,14 +71,14 @@ export default function Visit() {
       <div className="mt-14 grid grid-cols-1 gap-10 border-t border-rule pt-10 md:grid-cols-12 md:gap-12">
         <div className="md:col-span-4">
           <Eyebrow>Where</Eyebrow>
-          <div className="mt-4 whitespace-pre-line font-display text-[20px] leading-[1.45]">
+          <MapsLink
+            address={`${site.address.line1}, ${site.address.line2}`}
+            className="mt-4 block whitespace-pre-line font-display text-[20px] leading-[1.45] transition-colors duration-200 ease-expo hover:text-accent"
+          >
             {site.address.line1}
             {"\n"}
             {site.address.line2}
-          </div>
-          <div className="mt-4 font-mono text-[11px] uppercase tracking-wide2 text-muted">
-            Free parking on-site
-          </div>
+          </MapsLink>
         </div>
         <div className="md:col-span-4">
           <Eyebrow>Hours</Eyebrow>

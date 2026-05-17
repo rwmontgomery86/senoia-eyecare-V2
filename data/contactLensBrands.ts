@@ -12,19 +12,19 @@ export const contactLensBrands: ContactLensBrand[] = [
   {
     name: "Acuvue",
     dna: "The category-defining hydration tech — comfort that holds through the workday.",
-    series: ["Oasys 1-Day", "Oasys for Astigmatism", "Vita", "Define"],
+    series: ["Acuvue Oasys", "Acuvue 1 Day Max", "Acuvue Moist"],
     needs: ["Dry eye", "Astigmatism", "Presbyopia", "Cosmetic"],
   },
   {
     name: "CooperVision",
     dna: "Pioneered silicone-hydrogel dailies and built the broadest toric / multifocal range.",
-    series: ["MyDay", "clariti 1 day", "Biofinity", "Biofinity Toric", "Biofinity Multifocal"],
+    series: ["Biofinity", "MyDay", "Clariti"],
     needs: ["Dry eye", "Astigmatism", "Presbyopia"],
   },
   {
     name: "Alcon",
     dna: "Water-gradient surface chemistry — premium comfort for sensitive wearers.",
-    series: ["Total1", "Precision1", "Dailies AquaComfort Plus", "Air Optix HydraGlyde"],
+    series: ["Total1", "Precision1", "Precision7", "Total30"],
     needs: ["Dry eye", "Comfort", "Extended wear"],
   },
   {

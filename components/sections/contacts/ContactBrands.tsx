@@ -24,9 +24,9 @@ export default function ContactBrands() {
         </h2>
         <FadeUp delay={0.15}>
           <p className="mx-auto mt-6 max-w-[560px] text-[15px] leading-[1.6] text-muted">
-            We&apos;re not beholden to one supplier. Your fitting starts with
-            your eye, your day, and your prescription — the brand follows from
-            there.
+            We&apos;re not tied to one supplier. Your fitting starts with your
+            eye and your prescription, and the brand follows. Below is a sample
+            of what we fit, not the full list.
           </p>
         </FadeUp>
       </div>
@@ -43,7 +43,7 @@ export default function ContactBrands() {
                 {b.name}
               </div>
               <ul className="mt-5 space-y-1.5 font-body text-[13px] leading-[1.5] text-muted">
-                {b.series.slice(0, 3).map((s) => (
+                {b.series.map((s) => (
                   <li key={s}>{s}</li>
                 ))}
               </ul>

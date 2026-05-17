@@ -13,7 +13,7 @@ export default function EyeExamsHero() {
             as="span"
             inView={false}
             delay={0.2}
-            segments={[{ text: "An exam," }]}
+            segments={[{ text: "An eye exam," }]}
             className="block"
           />
           <WordReveal
@@ -21,8 +21,8 @@ export default function EyeExamsHero() {
             inView={false}
             delay={0.55}
             segments={[
-              { text: "without", italic: true, className: "text-accent" },
-              { text: " the rush." },
+              { text: "made", italic: true, className: "text-accent" },
+              { text: " for you." },
             ]}
             className="block"
           />
@@ -30,10 +30,9 @@ export default function EyeExamsHero() {
 
         <FadeUp delay={0.9} y={16}>
           <p className="mt-8 max-w-[600px] text-[18px] leading-[1.6] text-muted">
-            Comprehensive eye care for the whole family — one patient at a time,
-            in a room without a clock on the wall. From your first hello to the
-            moment you choose new frames, here&apos;s what to expect when you
-            visit.
+            Comprehensive eye care for the whole family — personal attention
+            from check-in to checkout. From your first hello to the moment you
+            choose new frames, here&apos;s what to expect when you visit.
           </p>
         </FadeUp>
 

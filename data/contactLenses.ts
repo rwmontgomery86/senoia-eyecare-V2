@@ -6,7 +6,7 @@ export const lensTypes: LensType[] = [
     title: "Soft, every day.",
     tag: "Daily, biweekly, monthly",
     summary:
-      "Comfortable disposables for routine wear — fresh pair each morning or a longer-wear schedule. Ideal for first-time wearers who want simplicity.",
+      "Comfortable disposables for everyday wear. Fresh pair each morning, or a biweekly/monthly schedule. A good starting point for first-time wearers.",
   },
   {
     number: "02",
@@ -20,7 +20,7 @@ export const lensTypes: LensType[] = [
     title: "Multifocal, for presbyopia.",
     tag: "Reading and distance, in one",
     summary:
-      "A single lens that handles distance, intermediate, and near — designed for the eyes after forty. An alternative to readers when contacts are preferred.",
+      "A single lens that handles distance, intermediate, and reading — the lens for presbyopia. A good alternative to readers if you'd rather not switch glasses all day.",
   },
 ];
 
@@ -28,7 +28,7 @@ export const fittingSteps: FittingStep[] = [
   {
     number: "01",
     title: "Comprehensive exam.",
-    body: "Every fitting begins with a full evaluation of your vision and ocular health. The contact lens prescription is shaped by what we find here — it's never assumed from your glasses Rx.",
+    body: "Every fitting starts with a full evaluation of your vision and eye health. Your contact lens prescription is shaped by what we find. We don't assume it from your glasses Rx.",
   },
   {
     number: "02",
@@ -38,12 +38,12 @@ export const fittingSteps: FittingStep[] = [
   {
     number: "03",
     title: "Trial pair.",
-    body: "You leave with a trial pair to wear in real life — at the screen, behind the wheel, in the evening. Comfort and vision after a few days at home tell us more than any in-office check.",
+    body: "You leave with a trial pair to wear in real life. Comfort and vision after a few days at home tell us more than any in-office check.",
   },
   {
     number: "04",
     title: "Follow-up.",
-    body: "We see you back to confirm fit and finalize the prescription. From there, we order your supply and walk through insertion, removal, and care if you're new to wearing.",
+    body: "We'll reach out to confirm the trial pair is comfortable and your vision is clear. Once both check out, we finalize your prescription so you can order.",
   },
 ];
 
@@ -56,7 +56,7 @@ export const faq: Faq[] = [
   {
     question: "Can I sleep in my contacts?",
     answer:
-      "Generally, no — overnight wear meaningfully raises the risk of infection and corneal complications, even with lenses approved for it. We recommend taking them out before bed. If you want a sleep-in option, we'll talk through the trade-offs.",
+      "Generally, no. Overnight wear meaningfully raises the risk of infection and corneal complications, even with lenses approved for it. We recommend taking them out before bed. If you want a sleep-in option, we'll walk through the trade-offs.",
   },
   {
     question: "Are contacts covered by my insurance?",

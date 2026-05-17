@@ -14,9 +14,9 @@ export default function Services() {
             <WordReveal
               as="span"
               segments={[
-                { text: "Everything your" },
-                { text: "eyes need,", italic: true, className: "text-accent" },
-                { text: "in one place." },
+                { text: "What we" },
+                { text: "do", italic: true, className: "text-accent" },
+                { text: "here." },
               ]}
               className="block"
             />

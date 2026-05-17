@@ -66,7 +66,7 @@ export default function Insurance() {
             </p>
             <p className="mt-6 max-w-[400px] text-[14.5px] leading-[1.6] text-muted">
               First visit? Plan on about an hour from arrival to checkout. New
-              patient forms are emailed ahead so the time you spend in the
+              patient forms are sent ahead so the time you spend in the
               office is time with us, not a clipboard.
             </p>
           </div>

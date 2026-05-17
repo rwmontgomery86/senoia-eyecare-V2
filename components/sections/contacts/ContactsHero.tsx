@@ -64,9 +64,10 @@ export default function ContactsHero() {
               transition={{ duration: 1, delay: 1.4, ease: [0.16, 1, 0.3, 1] }}
               className="mt-8 max-w-[480px] text-[18px] leading-[1.6] text-inverted-muted"
             >
-              Soft, toric, and multifocal contact lenses — fit to the eye in
-              front of us. Whether you&apos;ve worn lenses for years or are
-              trying them for the first time, we take the time to get it right.
+              Soft, toric, and multifocal contact lenses, fit to your eye in
+              our chair. Whether you&apos;ve worn lenses for years or you&apos;re
+              trying them for the first time, we&apos;ll take the time to get it
+              right.
             </motion.p>
 
             <motion.div

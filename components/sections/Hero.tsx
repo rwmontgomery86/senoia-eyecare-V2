@@ -110,8 +110,9 @@ export default function Hero() {
               transition={{ duration: 1, delay: 1.5, ease: [0.16, 1, 0.3, 1] }}
               className="mt-8 max-w-[460px] font-body text-[16px] leading-[1.6] text-inverted-muted md:text-[18px]"
             >
-              A boutique eyecare practice with hand-picked designer frames and
-              unhurried, comprehensive exams — all under one roof in Senoia.
+              A boutique eyecare practice in Senoia, Georgia. Designer frames
+              and comprehensive exams in the same room, with the same doctor
+              each visit.
             </motion.p>
 
             <motion.div
