@@ -10,7 +10,7 @@ const tools = [
     eyebrow: "Optomap",
     name: "Wide-field retinal imaging",
     body:
-      "A high-resolution photo of your retina captures up to 200° of the back of the eye — often without dilation, so your day isn't blurry afterward.",
+      "A high-resolution photo of your retina captures up to 200° of the back of the eye.",
   },
   {
     eyebrow: "OCT",
@@ -22,7 +22,7 @@ const tools = [
     eyebrow: "Phoropter",
     name: "Modern refraction",
     body:
-      "Precise, computer-assisted measurement of your prescription — the difference between a number that's close and a number that's right.",
+      "Precise, computer-assisted measurement of your prescription. This is the difference between a number that's close and a number that's right.",
   },
 ];
 

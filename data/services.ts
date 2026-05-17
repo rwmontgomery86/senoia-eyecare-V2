@@ -6,7 +6,7 @@ export const services: Service[] = [
     number: "01",
     title: "Comprehensive Exams",
     summary:
-      "Annual evaluations using advanced retinal imaging — for vision, ocular health, and what's beneath. Forty-five unhurried minutes.",
+      "Annual evaluations with advanced retinal imaging. We look at vision, eye health, and the things you can't see for yourself. About 45 minutes per exam.",
     href: "/eye-exams",
   },
   {
@@ -14,7 +14,7 @@ export const services: Service[] = [
     number: "02",
     title: "Contact Lens Fitting",
     summary:
-      "Soft, toric, and multifocal lenses fit to the eye in front of us — not assumed from your glasses prescription. New wearers welcome.",
+      "Soft, toric, and multifocal lenses fit to your eye in our chair, not assumed from your glasses prescription. New wearers welcome.",
     href: "/contacts",
   },
   {
@@ -22,7 +22,7 @@ export const services: Service[] = [
     number: "03",
     title: "Pediatric & Family",
     summary:
-      "Gentle, thorough exams for the youngest patients, with sight-development tracking from age three. Parents in the room, no rushing.",
+      "Gentle exams for kids, with sight-development tracking from age three. Parents stay in the room.",
     href: "/pediatric-family",
   },
 ];

@@ -25,7 +25,7 @@ export default function LensTypes() {
           <FadeUp delay={0.1} y={20}>
             <p className="mt-6 max-w-[420px] text-[15px] leading-[1.6] text-muted">
               The right lens depends on your eye, your prescription, and how
-              you actually live. We&apos;ll talk through the options together.
+              you spend your day. We&apos;ll talk through the options together.
             </p>
           </FadeUp>
         </div>

@@ -26,7 +26,7 @@ export default function VariantPhotoSplit() {
           <FadeUp delay={0.15} y={16}>
             <p className="max-w-[440px] text-[16px] leading-[1.6] text-muted">
               Your contact lens prescription, on file and ready. Reorder in
-              minutes — Marlo ships your lenses straight to your door.
+              minutes. Marlo ships straight to your door.
             </p>
           </FadeUp>
           <FadeUp delay={0.25} y={16}>

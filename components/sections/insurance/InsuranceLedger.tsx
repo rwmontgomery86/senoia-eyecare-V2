@@ -13,14 +13,14 @@ const verifySteps = [
   },
   {
     label: "Tell us why you're visiting",
-    body: "Routine exams bill to vision insurance. Medical concerns — dry eye, an infection, a sudden change — bill to medical. Mention it when you book.",
+    body: "Routine exams bill to vision insurance. Medical concerns like dry eye, an infection, or a sudden change bill to medical insurance. Mention which it is when you book.",
   },
   {
     label: "We verify in advance",
-    body: "Before the visit, we call your carrier to confirm covered services, allowances, and your copay. No surprises at checkout.",
+    body: "Before the visit, we call your carrier to confirm covered services, allowances, and your copay. That way nothing changes at checkout.",
   },
   {
-    label: "Pay only what's yours",
+    label: "Pay at checkout",
     body: "We file directly with your carrier. You pay your copay plus any non-covered services on the day of the visit.",
   },
 ];
@@ -28,19 +28,19 @@ const verifySteps = [
 const faqs = [
   {
     q: "Do you bill my insurance directly?",
-    a: "Yes — we file with all listed carriers and you pay only your copay and any non-covered services at the visit. No reimbursement paperwork on your end.",
+    a: "Yes. We file with all listed carriers, and you pay only your copay and any non-covered services at the visit. You don't have to deal with reimbursement paperwork on your end.",
   },
   {
     q: "What if my plan isn't listed?",
-    a: "Call us. Coverage networks shift year to year and we may still be in-network through a plan administrator we don't list separately.",
+    a: "Call us. Coverage networks shift year to year, and we may still be in-network through a plan administrator that isn't named on this page.",
   },
   {
     q: "Does insurance cover contact lenses?",
     a: "Most vision plans include a contact lens allowance, usually in place of the frame allowance. We apply it directly during your fitting.",
   },
   {
-    q: "My visit is for a medical issue — does that change billing?",
-    a: "Yes — visits for red eye, dry eye, infections, diabetes follow-up, or new vision symptoms are billed to medical insurance, not your vision plan.",
+    q: "My visit is for a medical issue. Does that change billing?",
+    a: "Yes. Visits for red eye, dry eye, infections, diabetes follow-up, or new vision symptoms bill to your medical insurance, not your vision plan.",
   },
 ];
 
@@ -65,8 +65,8 @@ export default function InsuranceLedger() {
 
           <FadeUp delay={0.15}>
             <p className="mt-5 text-[15px] leading-[1.6] text-muted">
-              The full carrier list — plus a quick way to verify your benefits
-              before you arrive.
+              The full carrier list, and how to verify your benefits before you
+              arrive.
             </p>
           </FadeUp>
 
@@ -93,7 +93,7 @@ export default function InsuranceLedger() {
           <div className="mt-10 border-l-2 border-accent pl-5">
             <Eyebrow symbol={null}>Don&apos;t see your plan?</Eyebrow>
             <p className="mt-3 text-[15px] leading-[1.6] text-ink/85">
-              Call us — coverage shifts each year and we may still be
+              Call us. Coverage shifts each year, and we may still be
               in-network.
             </p>
             <a
@@ -143,8 +143,7 @@ export default function InsuranceLedger() {
                 <div className="border-t border-accent pt-6">
                   <Eyebrow symbol={null}>Vision plan</Eyebrow>
                   <p className="mt-4 text-[15px] leading-[1.65] text-ink/85">
-                    Routine exams, glasses, and contacts every twelve to
-                    twenty-four months.
+                    Routine exams, glasses, and contacts every 12 to 24 months.
                   </p>
                   <p className="mt-3 font-display italic text-[14px] leading-[1.6] text-muted">
                     VSP · EyeMed · Spectera · Superior · Davis
@@ -153,7 +152,7 @@ export default function InsuranceLedger() {
                 <div className="border-t border-accent pt-6">
                   <Eyebrow symbol={null}>Medical plan</Eyebrow>
                   <p className="mt-4 text-[15px] leading-[1.65] text-ink/85">
-                    Eye conditions — dry eye, infections, diabetes follow-up,
+                    Eye conditions: dry eye, infections, diabetes follow-up,
                     glaucoma, sudden vision changes.
                   </p>
                   <p className="mt-3 font-display italic text-[14px] leading-[1.6] text-muted">
@@ -164,8 +163,8 @@ export default function InsuranceLedger() {
             </FadeUp>
             <FadeUp delay={0.2}>
               <p className="mt-7 text-[15px] leading-[1.65] text-muted">
-                Not sure which applies? Mention it when you book — we&apos;ll
-                sort it before you arrive.
+                Not sure which applies? Mention it when you book and
+                we&apos;ll sort it before you arrive.
               </p>
             </FadeUp>
           </div>
@@ -178,7 +177,7 @@ export default function InsuranceLedger() {
           <div className="max-w-[640px]">
             <Eyebrow>§ 02 · How verification works</Eyebrow>
             <h2 className="mt-5 font-display text-[clamp(1.875rem,3.2vw,2.5rem)] font-medium leading-[1.08]">
-              Four steps. Most happen before you arrive.
+              How we verify your benefits.
             </h2>
             <div className="mt-8 grid grid-cols-1 gap-6 sm:grid-cols-2 sm:gap-8">
               {verifySteps.map((s, i) => (
@@ -207,21 +206,21 @@ export default function InsuranceLedger() {
           <div className="max-w-[640px]">
             <Eyebrow>§ 03 · Self-pay & out-of-network</Eyebrow>
             <h2 className="mt-5 font-display text-[clamp(1.875rem,3.2vw,2.5rem)] font-medium leading-[1.08]">
-              Without insurance, we keep it simple.
+              Paying out of pocket.
             </h2>
             <FadeUp delay={0.1}>
               <p className="mt-6 text-[16px] leading-[1.7] text-ink/85">
                 We publish flat self-pay pricing for exams, contact lens
-                fittings, and frames — no inflation to make up for missing
-                insurance. If you&apos;re between plans or your carrier
-                isn&apos;t listed, call{" "}
+                fittings, and frames. We don&apos;t inflate prices to make up
+                for missing insurance. If you&apos;re between plans or your
+                carrier isn&apos;t listed, call{" "}
                 <a
                   href={`tel:${site.phone.tel}`}
                   className="text-accent underline-offset-4 hover:underline"
                 >
                   {site.phone.display}
                 </a>{" "}
-                for a rundown.
+                and we&apos;ll walk you through it.
               </p>
             </FadeUp>
           </div>
@@ -234,7 +233,7 @@ export default function InsuranceLedger() {
           <div className="max-w-[640px]">
             <Eyebrow>§ 04 · Frequently asked</Eyebrow>
             <h2 className="mt-5 font-display text-[clamp(1.875rem,3.2vw,2.5rem)] font-medium leading-[1.08]">
-              A few common questions.
+              Questions we get asked.
             </h2>
             <div className="mt-8 divide-y divide-rule border-y border-rule">
               {faqs.map((f) => (

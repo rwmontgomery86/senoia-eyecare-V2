@@ -14,7 +14,7 @@ const ledger = [
   {
     label: "Color",
     title: "Color Infusion",
-    body: "Tinted at the molecular level. No fade, no flake.",
+    body: "Tinted at the molecular level. It doesn't fade or flake.",
   },
   {
     label: "Protection",
@@ -105,7 +105,7 @@ export default function Frames() {
 
         <div className="mt-10 flex flex-col gap-6">
           <p className="font-display text-[17px] italic leading-[1.55] text-muted">
-            Born on a Maui beach. Fitted in our chair on Main Street.
+            Born on a Maui beach. Fitted in our chair.
           </p>
           <Button href="/frames" variant="filled-ink" size="lg" arrow>
             Explore Maui Jim
@@ -146,8 +146,7 @@ export default function Frames() {
 
             <FadeUp y={16} delay={0.4}>
               <p className="mt-6 max-w-[40ch] font-display italic leading-[1.4] text-muted text-[clamp(1.25rem,2vw,1.625rem)]">
-                The lens technology born on a Maui beach, fitted in our chair on
-                Main Street.
+                The lens technology born on a Maui beach, fitted in our chair.
               </p>
             </FadeUp>
           </div>

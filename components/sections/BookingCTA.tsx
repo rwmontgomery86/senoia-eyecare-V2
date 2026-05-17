@@ -79,7 +79,7 @@ export default function BookingCTA() {
         >
           <p className="md:col-span-6 max-w-[520px] text-base leading-relaxed text-inverted-muted md:text-lg">
             Comprehensive evaluations by appointment. New patients welcome.
-            We see one patient at a time, in a room without rush.
+            Personal care, on schedule. Every patient gets the full chair.
           </p>
           <div className="flex flex-wrap gap-4 md:col-span-6 md:justify-end">
             <a

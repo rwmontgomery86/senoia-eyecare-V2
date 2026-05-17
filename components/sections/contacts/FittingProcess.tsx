@@ -27,9 +27,8 @@ export default function FittingProcess() {
           </h2>
           <FadeUp delay={0.1} y={20}>
             <p className="mt-6 max-w-[480px] text-[15px] leading-[1.6] text-muted">
-              A contact lens evaluation is a separate visit from a comprehensive
-              eye exam — it deserves its own time. Here&apos;s the arc of a
-              typical fitting.
+              A contact lens evaluation is its own visit, separate from a
+              comprehensive eye exam. Here&apos;s how a typical fitting goes.
             </p>
           </FadeUp>
 
