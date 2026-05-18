@@ -42,6 +42,7 @@ export type Doctor = {
   credentials: string;
   role: string;
   oneLiner: string;
+  bio: string[];
   photo: string;
 };
 

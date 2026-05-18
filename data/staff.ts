@@ -6,7 +6,7 @@ export const staff: StaffMember[] = [
     name: "Melinda Stevenson",
     role: "Office Manager",
     oneLiner:
-      "In this field since 2012 — the steady hand at the front of the practice.",
+      "Running the place since 2012. Knows where everything is, who broke it, and where it's hidden.",
     photo: "/images/staff/melinda.jpg",
   },
   {
@@ -14,7 +14,7 @@ export const staff: StaffMember[] = [
     name: "Vicki Wrege",
     role: "Optician",
     oneLiner:
-      "Frames, lenses, and fittings — the optical specialist on the other side of the counter.",
+      "Frame styling, lens orders, and the kind of adjustments you can't really do yourself.",
     photo: "/images/staff/vicki.jpg",
   },
   {
@@ -22,7 +22,7 @@ export const staff: StaffMember[] = [
     name: "Gracie McDaniel",
     role: "Receptionist",
     oneLiner:
-      "First voice on the phone, first face at the door — keeping the schedule moving.",
+      "The voice you'll hear when you call and the person who'll greet you at the door.",
     photo: "/images/staff/gracie.jpg",
   },
 ];

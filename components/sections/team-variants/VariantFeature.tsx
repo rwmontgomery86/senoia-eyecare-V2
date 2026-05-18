@@ -37,8 +37,10 @@ export default function VariantFeature() {
           </div>
           <FadeUp className="md:col-span-3 md:pt-4" delay={0.2}>
             <p className="text-[15px] leading-[1.65] text-muted">
-              Two optometrists. One office manager. A small, intentional team —
-              the same faces every time you visit.
+              Two optometrists, one office manager, and a small team behind the
+              counter. The practice is small on purpose — so the person who
+              checks you in is the same person who'll remember your kid's name
+              next year.
             </p>
           </FadeUp>
         </div>
@@ -115,20 +117,15 @@ export default function VariantFeature() {
                     </blockquote>
                   </FadeUp>
 
-                  {/* Bio paragraphs (synthesized from oneLiner + role for now) */}
                   <FadeUp delay={0.3} className="mt-8 space-y-5">
-                    <p className="max-w-[560px] text-[16px] leading-[1.7] text-muted">
-                      Dr. {doc.name.split(" ").slice(-1)} practices at Senoia
-                      Eyecare as {doc.role.toLowerCase()}.{" "}
-                      {i === 0
-                        ? "Forty-five-minute exams are the default here — no rushing, no upsell theater. Just careful work, the way it should be."
-                        : "Pediatric, family, and contact lens care with a patient, methodical approach — the same standard, every visit."}
-                    </p>
-                    <p className="max-w-[560px] text-[16px] leading-[1.7] text-muted">
-                      {i === 0
-                        ? "Booking is straightforward — pick a time on Eyefinity, walk in, sit down with Dr. Montgomery. Most patients are seen the same week they call."
-                        : "Patients of all ages welcome. Most insurance accepted. Same-week appointments available — call the front desk to find a time that fits."}
-                    </p>
+                    {doc.bio.map((paragraph, idx) => (
+                      <p
+                        key={idx}
+                        className="max-w-[560px] text-[16px] leading-[1.7] text-muted"
+                      >
+                        {paragraph}
+                      </p>
+                    ))}
                   </FadeUp>
                 </div>
               </div>
@@ -154,8 +151,8 @@ export default function VariantFeature() {
             </h2>
             <FadeUp delay={0.15} className="mt-6">
               <p className="max-w-[420px] text-[15px] leading-[1.65] text-muted">
-                Front desk, optical, and office — the people who keep the
-                practice running, every day.
+                Front desk, optical, office. Three people who keep the schedule
+                moving.
               </p>
             </FadeUp>
           </div>
