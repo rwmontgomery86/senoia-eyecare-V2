@@ -5,6 +5,7 @@ import { useRef } from "react";
 import WordReveal from "@/components/ui/WordReveal";
 import StripedPlaceholder from "@/components/ui/StripedPlaceholder";
 import Button from "@/components/ui/Button";
+import VariantOverlay from "@/components/sections/contacts-hero-variants/VariantOverlay";
 import { site } from "@/data/site";
 import { images } from "@/data/images";
 
@@ -24,7 +25,11 @@ export default function ContactsHero() {
       id="top"
       className="relative bg-ink text-inverted-text"
     >
-      <div className="px-6 pb-24 pt-36 md:px-10 md:pb-28 md:pt-40 lg:px-16 lg:pb-32 lg:pt-44">
+      <div className="lg:hidden">
+        <VariantOverlay />
+      </div>
+
+      <div className="hidden px-6 pb-24 pt-36 md:px-10 md:pb-28 md:pt-40 lg:block lg:px-16 lg:pb-32 lg:pt-44">
         <div className="grid grid-cols-1 items-end gap-16 lg:grid-cols-[1.05fr_1fr] lg:gap-16">
           {/* Left: text */}
           <motion.div style={{ y: contentY }}>
