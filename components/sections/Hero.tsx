@@ -37,7 +37,7 @@ export default function Hero() {
         >
           <Image
             src={images.heroMobile!}
-            alt=""
+            alt="Patient wearing designer eyewear, fit at Senoia Eyecare in Senoia, Georgia"
             fill
             priority
             quality={85}
@@ -46,7 +46,7 @@ export default function Hero() {
           />
           <Image
             src={images.heroDesktop!}
-            alt=""
+            alt="Patient wearing designer eyewear, fit at Senoia Eyecare in Senoia, Georgia"
             fill
             priority
             quality={85}

@@ -1,0 +1,35 @@
+# Senoia Eyecare
+
+> A boutique optometry practice in Senoia, Georgia. Comprehensive eye exams, contact lens fittings, and a curated selection of designer frames for the whole family. Owned and operated by Dr. Ross Montgomery, OD, with Dr. Taylor Williamson, OD.
+
+Senoia Eyecare is an independent, doctor-owned optometry practice serving Senoia, Newnan, Sharpsburg, Tyrone, Peachtree City, Fayetteville, and the surrounding Coweta County area. Appointments are unhurried and booked through an external scheduler. Most major vision and medical insurance is accepted.
+
+## About
+
+- [Home](https://senoiaeyecare.com/): Practice overview, services, frame selection, and patient testimonials.
+- [Team](https://senoiaeyecare.com/team): Doctor bios and practice staff.
+
+## Services
+
+- [Comprehensive Eye Exams](https://senoiaeyecare.com/eye-exams): Annual evaluations with advanced retinal imaging. About 45 minutes per exam. Includes FAQ on exam frequency, what to bring, and pediatric scheduling.
+- [Contact Lens Fitting](https://senoiaeyecare.com/contacts): Soft, toric, and multifocal lenses fit in-chair. New wearers welcome.
+- [Pediatric & Family Care](https://senoiaeyecare.com/pediatric-family): Children's exams from age three, with parents in the room. InfantSEE provider (no-cost assessment for babies 6–12 months).
+- [Frames](https://senoiaeyecare.com/frames): Curated frame selection — independent designers from Spain and Chicago alongside American icons. Featured: Maui Jim polarized sunwear.
+
+## Visit
+
+- [Insurance](https://senoiaeyecare.com/insurance): Accepted carriers — VSP, EyeMed, Spectera, Superior, Davis, Medicare, Aetna, Blue Cross Blue Shield, Cigna, UMR, UHC, Humana, and more.
+- Address: 7280 GA-16 Suite F, Senoia, Georgia 30276
+- Phone: (770) 727-6687
+- Email: info@senoiaeyecare.com
+- Hours: Monday–Friday, 8:00 AM – 5:00 PM. Closed Saturday and Sunday.
+
+## Booking
+
+- [Book an appointment](https://senoiaeyecare.com/book): Redirects to the Eyefinity scheduler. Patients select exam type, doctor, and time.
+
+## Optional
+
+- [Accessibility Statement](https://senoiaeyecare.com/accessibility): Website accessibility commitments and how to report a barrier.
+- [Privacy Policy](https://senoiaeyecare.com/privacy): How the website handles visitor information.
+- [Facebook](https://www.facebook.com/senoiaeyecare): Practice updates and announcements.

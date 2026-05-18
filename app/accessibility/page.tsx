@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "Accessibility",
   description:
     "Senoia Eyecare is committed to a website that welcomes everyone. Our accessibility statement, known limitations, and how to report a barrier.",
+  alternates: { canonical: "/accessibility" },
 };
 
 export default function AccessibilityPage() {

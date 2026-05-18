@@ -34,12 +34,6 @@ const grid = [
   { label: "Model № 03", angle: 120 },
 ] as const;
 
-const gridImages = [
-  "mauiJimModel1",
-  "mauiJimModel2",
-  "mauiJimModel3",
-] as const;
-
 export default function VariantTypePoster() {
   return (
     <section className="bg-paper px-6 py-24 md:px-10 md:py-28 lg:px-16 lg:py-32">
@@ -169,7 +163,6 @@ export default function VariantTypePoster() {
                   <StripedPlaceholder
                     aspect="4/5"
                     angle={cell.angle}
-                    image={images[gridImages[i]]}
                     imageAlt={`Maui Jim ${cell.label}`}
                     sizes="33vw"
                     zoomOnHover

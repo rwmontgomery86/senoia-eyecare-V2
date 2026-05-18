@@ -5,7 +5,6 @@ import GoldRule from "@/components/ui/GoldRule";
 import StripedPlaceholder from "@/components/ui/StripedPlaceholder";
 import Button from "@/components/ui/Button";
 import { site } from "@/data/site";
-import { images } from "@/data/images";
 
 const promises = [
   {
@@ -112,7 +111,6 @@ export default function VariantTypographicQuiet() {
               aspect="21/9"
               angle={75}
               caption="[ EDITORIAL BAND — 21:9 ]"
-              image={images.pedFamHeroBand}
               imageAlt="Pediatric care at Senoia Eyecare"
               sizes="100vw"
             />

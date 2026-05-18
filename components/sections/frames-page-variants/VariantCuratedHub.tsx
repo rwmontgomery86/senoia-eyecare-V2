@@ -78,7 +78,6 @@ export default function VariantCuratedHub() {
                 <StripedPlaceholder
                   aspect="5/4"
                   angle={115}
-                  image={images.mauiJimPortrait}
                   imageAlt="Maui Jim polarized sunwear"
                   sizes="(min-width: 768px) 58vw, 100vw"
                   zoomOnHover

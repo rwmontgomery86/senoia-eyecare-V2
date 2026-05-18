@@ -4,7 +4,6 @@ import FadeUp from "@/components/ui/FadeUp";
 import StripedPlaceholder from "@/components/ui/StripedPlaceholder";
 import Button from "@/components/ui/Button";
 import { site } from "@/data/site";
-import { images } from "@/data/images";
 
 const beats = [
   {
@@ -35,7 +34,6 @@ export default function VariantEditorialSplit() {
               aspect="3/4"
               angle={45}
               caption="[ PEDIATRIC PORTRAIT — 3:4 ]"
-              image={images.pedFamHeroPortrait}
               imageAlt="A young patient at Senoia Eyecare"
               sizes="(min-width: 1024px) 50vw, 100vw"
               priority

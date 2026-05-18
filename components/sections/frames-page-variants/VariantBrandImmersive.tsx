@@ -17,21 +17,18 @@ const pillars = [
     label: "Place",
     title: "Made for the islands.",
     body: "Picked for the porch hours, the patio, the back nine in Coweta County.",
-    image: "mauiJimPortrait" as const,
     angle: 45,
   },
   {
     label: "Light",
     title: "Glare, gone.",
     body: "PolarizedPlus2® lenses pull glare off pavement and water. Color comes back. Depth comes back.",
-    image: "mauiJimDetail" as const,
     angle: 120,
   },
   {
     label: "Fit",
     title: "Fitted in our chair.",
     body: "Every Maui Jim model, by hand. Available in your prescription.",
-    image: "mauiJimModel1" as const,
     angle: 30,
   },
 ];
@@ -41,8 +38,6 @@ const grid = [
   { label: "Model № 02", angle: 105 },
   { label: "Model № 03", angle: 150 },
 ] as const;
-
-const gridImages = ["mauiJimModel1", "mauiJimModel2", "mauiJimModel3"] as const;
 
 export default function VariantBrandImmersive() {
   const heroRef = useRef<HTMLElement>(null);
@@ -146,7 +141,6 @@ export default function VariantBrandImmersive() {
                   <StripedPlaceholder
                     aspect="3/4"
                     angle={p.angle}
-                    image={images[p.image]}
                     imageAlt={`Maui Jim — ${p.label}`}
                     sizes="(min-width: 768px) 33vw, 100vw"
                   />
@@ -198,7 +192,6 @@ export default function VariantBrandImmersive() {
                   <StripedPlaceholder
                     aspect="4/5"
                     angle={cell.angle}
-                    image={images[gridImages[i]]}
                     imageAlt={`Maui Jim ${cell.label}`}
                     sizes="(min-width: 768px) 33vw, 100vw"
                     zoomOnHover

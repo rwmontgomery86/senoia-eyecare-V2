@@ -52,8 +52,6 @@ const grid = [
   { label: "Model № 03", angle: 120 },
 ] as const;
 
-const gridImages = ["mauiJimModel1", "mauiJimModel2", "mauiJimModel3"] as const;
-
 const stylingNotes = [
   "One-on-one styling, by appointment or walk-in",
   "Heat & mechanical adjustments while you wait",
@@ -73,7 +71,6 @@ export default function VariantMagazineHub() {
                 <StripedPlaceholder
                   aspect="3/4"
                   angle={45}
-                  image={images.mauiJimPortrait}
                   imageAlt="Maui Jim sunwear, polarized in Senoia"
                   sizes="(min-width: 768px) 50vw, 100vw"
                   bottomLeft="Plate №01 · Polarized in Senoia"
@@ -84,7 +81,6 @@ export default function VariantMagazineHub() {
                   <StripedPlaceholder
                     aspect="4/5"
                     angle={120}
-                    image={images.mauiJimDetail}
                     imageAlt="Maui Jim PolarizedPlus2 lens detail"
                     sizes="(min-width: 768px) 35vw, 70vw"
                     bottomLeft="Plate №02 · Lens detail"
@@ -212,7 +208,6 @@ export default function VariantMagazineHub() {
                   <StripedPlaceholder
                     aspect="4/5"
                     angle={cell.angle}
-                    image={images[gridImages[i]]}
                     imageAlt={`Maui Jim ${cell.label}`}
                     sizes="(min-width: 768px) 33vw, 100vw"
                     zoomOnHover

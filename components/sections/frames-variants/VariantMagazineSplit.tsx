@@ -5,7 +5,6 @@ import FadeUp from "@/components/ui/FadeUp";
 import GoldRule from "@/components/ui/GoldRule";
 import StripedPlaceholder from "@/components/ui/StripedPlaceholder";
 import Button from "@/components/ui/Button";
-import { images } from "@/data/images";
 
 const beats = [
   {
@@ -49,7 +48,6 @@ export default function VariantMagazineSplit() {
               <StripedPlaceholder
                 aspect="3/4"
                 angle={45}
-                image={images.mauiJimPortrait}
                 imageAlt="Maui Jim sunwear, worn on Main Street"
                 sizes="(min-width: 768px) 50vw, 100vw"
                 bottomLeft="Plate №01 · Worn on Main Street"
@@ -60,7 +58,6 @@ export default function VariantMagazineSplit() {
                 <StripedPlaceholder
                   aspect="4/5"
                   angle={120}
-                  image={images.mauiJimDetail}
                   imageAlt="Maui Jim PolarizedPlus2 lens detail"
                   sizes="(min-width: 768px) 35vw, 70vw"
                   bottomLeft="Plate №02 · Lens detail"

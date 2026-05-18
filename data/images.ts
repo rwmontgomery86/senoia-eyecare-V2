@@ -32,12 +32,6 @@ export const images = {
   framesSide1: "/images/frames-state.jpg" as string | null,
 
   /**
-   * Frames — side stack 2 (OVVO).
-   * Drop file at: public/images/frames-ovvo.jpg
-   */
-  framesSide2: null as string | null, // "/images/frames-ovvo.jpg"
-
-  /**
    * Frames — side stack 3 (Maui Jim).
    * Drop file at: public/images/frames-maui-jim.jpg
    */
@@ -62,43 +56,12 @@ export const images = {
   mauiJimHookipa: "/images/featured/maui-jim/Hookipa.jpg" as string | null,
 
   /**
-   * Frames-variants sandbox — Maui Jim portrait (V02 magazine split, left top).
-   * 3:4 vertical, ~1200×1600px. Lifestyle / wearer in sunwear.
-   * Drop file at: public/images/frames/maui-jim-portrait.jpg
-   */
-  mauiJimPortrait: null as string | null,
-
-  /**
-   * Frames-variants sandbox — Maui Jim detail (V02 magazine split, left bottom inset).
-   * 4:5 vertical, ~1200×1500px. Lens / polarized detail or close-up.
-   * Drop file at: public/images/frames/maui-jim-detail.jpg
-   */
-  mauiJimDetail: null as string | null,
-
-  /**
-   * Frames-variants sandbox — Maui Jim product grid (V03 typographic poster, 3-up).
-   * 4:5 vertical, ~1200×1500px each. Frame shots, one per model.
-   * Drop files at: public/images/frames/maui-jim-model-1.jpg, -2.jpg, -3.jpg
-   */
-  mauiJimModel1: null as string | null,
-  mauiJimModel2: null as string | null,
-  mauiJimModel3: null as string | null,
-
-  /**
    * Frames page — Styling / fitting band.
    * Optician helping a patient try on frames. Hands-on detail.
    * 16:10 horizontal, ~1200×750px+.
    * Drop file at: public/images/featured/maui-jim/styling-fit.jpg
    */
   framesStyling: "/images/featured/maui-jim/styling-fit.jpg" as string | null,
-
-  /**
-   * Frames page — Sunglasses band.
-   * Polarized lens / sunglasses still life or on-figure.
-   * 4:5 vertical, ~1200×1500px+.
-   * Drop file at: public/images/frames/frames-sunglasses.jpg
-   */
-  framesSunglasses: null as string | null,
 
   /**
    * Visit — storefront photo.
@@ -188,20 +151,6 @@ export const images = {
    */
   heroMobile: "/images/hero/hero-mobile.jpg" as string | null,
   heroDesktop: "/images/hero/hero-desktop.jpg" as string | null,
-
-  /**
-   * Pediatric & Family variants sandbox — V1 (Editorial split) left hero portrait.
-   * 3:4 vertical, ~1200×1600px. Child mid-exam or trying frames; warm, calm.
-   * Drop file at: public/images/pediatric-family/hero-portrait.jpg
-   */
-  pedFamHeroPortrait: null as string | null,
-
-  /**
-   * Pediatric & Family variants sandbox — V2 (Typographic) single mid-page band.
-   * 21:9 horizontal, ~2400×1030px. Quiet wide editorial shot.
-   * Drop file at: public/images/pediatric-family/hero-band.jpg
-   */
-  pedFamHeroBand: null as string | null,
 
   /**
    * Pediatric & Family — V3 (Story timeline) chapter-opener.

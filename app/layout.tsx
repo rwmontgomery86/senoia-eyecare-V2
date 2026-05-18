@@ -1,9 +1,16 @@
 import type { Metadata } from "next";
 import { Cormorant_Garamond, Inter, JetBrains_Mono } from "next/font/google";
+import { GoogleAnalytics } from "@next/third-parties/google";
 import Nav from "@/components/Nav";
 import Footer from "@/components/sections/Footer";
 import { site } from "@/data/site";
+import {
+  optometristSchema,
+  webSiteSchema,
+} from "@/lib/structured-data";
 import "./globals.css";
+
+const GA_ID = process.env.NEXT_PUBLIC_GA_ID;
 
 const display = Cormorant_Garamond({
   subsets: ["latin"],
@@ -35,6 +42,24 @@ export const metadata: Metadata = {
   },
   description:
     "A boutique optometry practice in Senoia, Georgia. Hand-picked designer frames and unhurried, comprehensive eye exams.",
+  applicationName: site.name,
+  authors: [{ name: site.name, url: site.url }],
+  creator: site.name,
+  publisher: site.name,
+  category: "Health",
+  keywords: [
+    "optometrist",
+    "eye exam",
+    "Senoia",
+    "Senoia Georgia",
+    "Coweta County optometrist",
+    "contact lens fitting",
+    "pediatric eye exam",
+    "designer eyewear",
+    "Maui Jim",
+    "boutique optometry",
+  ],
+  formatDetection: { telephone: true, address: true, email: true },
   openGraph: {
     type: "website",
     locale: "en_US",
@@ -44,37 +69,17 @@ export const metadata: Metadata = {
     description:
       "Boutique optometry in Senoia, Georgia. Considered eyewear. Comprehensive care.",
   },
-};
-
-const jsonLd = {
-  "@context": "https://schema.org",
-  "@type": "Optometrist",
-  name: site.name,
-  url: site.url,
-  telephone: site.phone.tel,
-  email: site.email,
-  address: {
-    "@type": "PostalAddress",
-    streetAddress: site.address.line1,
-    addressLocality: "Senoia",
-    addressRegion: "GA",
-    postalCode: "30276",
-    addressCountry: "US",
+  twitter: {
+    card: "summary_large_image",
+    title: "Senoia Eyecare",
+    description:
+      "Boutique optometry in Senoia, Georgia. Considered eyewear. Comprehensive care.",
   },
-  geo: {
-    "@type": "GeoCoordinates",
-    latitude: 33.2941,
-    longitude: -84.5752,
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: { index: true, follow: true, "max-image-preview": "large" },
   },
-  openingHoursSpecification: [
-    {
-      "@type": "OpeningHoursSpecification",
-      dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-      opens: "08:00",
-      closes: "17:00",
-    },
-  ],
-  sameAs: [site.social.facebook.url],
 };
 
 export default function RootLayout({
@@ -82,6 +87,7 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+  const schemas = [optometristSchema(), webSiteSchema()];
   return (
     <html
       lang="en"
@@ -91,12 +97,16 @@ export default function RootLayout({
         <Nav />
         <main>{children}</main>
         <Footer />
-        <script
-          type="application/ld+json"
-          // eslint-disable-next-line react/no-danger
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-        />
+        {schemas.map((schema, i) => (
+          <script
+            key={i}
+            type="application/ld+json"
+            // eslint-disable-next-line react/no-danger
+            dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+          />
+        ))}
       </body>
+      {GA_ID ? <GoogleAnalytics gaId={GA_ID} /> : null}
     </html>
   );
 }

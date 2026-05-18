@@ -1,4 +1,3 @@
-// Attorney review required before launch.
 import EyebrowLabel from "@/components/ui/EyebrowLabel";
 import FadeUp from "@/components/ui/FadeUp";
 import { site } from "@/data/site";

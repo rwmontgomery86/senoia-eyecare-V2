@@ -8,6 +8,7 @@ export default function Footer() {
   return (
     <footer
       id="footer"
+      aria-label="Site footer"
       className="relative bg-ink px-6 pt-24 text-inverted-text md:px-10 lg:px-14"
     >
       <div className="mx-auto max-w-[1440px]">
@@ -90,6 +91,11 @@ export default function Footer() {
               <li>
                 <Link href="/contacts" className="transition-colors duration-200 ease-expo hover:text-accent">
                   Contacts
+                </Link>
+              </li>
+              <li>
+                <Link href="/pediatric-family" className="transition-colors duration-200 ease-expo hover:text-accent">
+                  Pediatric &amp; family
                 </Link>
               </li>
               <li>
