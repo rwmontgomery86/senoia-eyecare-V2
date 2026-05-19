@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Cormorant_Garamond, Inter, JetBrains_Mono } from "next/font/google";
-import { GoogleAnalytics } from "@next/third-parties/google";
+import { GoogleAnalytics, GoogleTagManager } from "@next/third-parties/google";
+import MetaPixel from "@/components/MetaPixel";
 import Nav from "@/components/Nav";
 import Footer from "@/components/sections/Footer";
 import { site } from "@/data/site";
@@ -11,6 +12,8 @@ import {
 import "./globals.css";
 
 const GA_ID = process.env.NEXT_PUBLIC_GA_ID;
+const GTM_ID = process.env.NEXT_PUBLIC_GTM_ID;
+const META_PIXEL_ID = process.env.NEXT_PUBLIC_META_PIXEL_ID;
 
 const display = Cormorant_Garamond({
   subsets: ["latin"],
@@ -93,7 +96,9 @@ export default function RootLayout({
       lang="en"
       className={`${display.variable} ${body.variable} ${mono.variable}`}
     >
+      {GTM_ID ? <GoogleTagManager gtmId={GTM_ID} /> : null}
       <body className="bg-paper text-ink font-body antialiased">
+        {META_PIXEL_ID ? <MetaPixel pixelId={META_PIXEL_ID} /> : null}
         <Nav />
         <main>{children}</main>
         <Footer />
