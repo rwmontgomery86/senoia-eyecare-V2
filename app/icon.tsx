@@ -23,19 +23,19 @@ export default function Icon() {
         <div
           style={{
             display: "flex",
-            fontSize: 340,
+            fontSize: 220,
             lineHeight: 1,
             fontWeight: 500,
-            fontStyle: "italic",
+            letterSpacing: -2,
           }}
         >
-          §
+          SEC
         </div>
         <div
           style={{
             display: "flex",
-            marginTop: 24,
-            width: 80,
+            marginTop: 28,
+            width: 96,
             height: 6,
             background: "#a8893f",
           }}

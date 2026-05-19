@@ -23,19 +23,19 @@ export default function AppleIcon() {
         <div
           style={{
             display: "flex",
-            fontSize: 120,
+            fontSize: 78,
             lineHeight: 1,
             fontWeight: 500,
-            fontStyle: "italic",
+            letterSpacing: -1,
           }}
         >
-          §
+          SEC
         </div>
         <div
           style={{
             display: "flex",
-            marginTop: 8,
-            width: 28,
+            marginTop: 10,
+            width: 34,
             height: 2,
             background: "#a8893f",
           }}
