@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Eyebrow from "@/components/ui/Eyebrow";
 import WordReveal from "@/components/ui/WordReveal";
 import FadeUp from "@/components/ui/FadeUp";
@@ -79,6 +80,18 @@ export default function Visit() {
             {"\n"}
             {site.address.line2}
           </MapsLink>
+          <Link
+            href="/contact-us"
+            className="group mt-4 inline-flex items-center gap-2 font-mono text-[11px] uppercase tracking-eyebrow text-muted transition-colors duration-200 ease-expo hover:text-accent"
+          >
+            Plan your visit
+            <span
+              aria-hidden
+              className="inline-block transition-transform duration-300 ease-expo group-hover:translate-x-1"
+            >
+              →
+            </span>
+          </Link>
         </div>
         <div className="md:col-span-4">
           <Eyebrow>Hours</Eyebrow>

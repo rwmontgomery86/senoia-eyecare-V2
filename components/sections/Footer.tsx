@@ -109,6 +109,11 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="/contact-us" className="transition-colors duration-200 ease-expo hover:text-accent">
+                  Visit us
+                </Link>
+              </li>
+              <li>
                 <a
                   href={site.bookingUrl}
                   target="_blank"
