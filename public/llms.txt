@@ -6,19 +6,19 @@ Senoia Eyecare is an independent, doctor-owned optometry practice serving Senoia
 
 ## About
 
-- [Home](https://senoiaeyecare.com/): Practice overview, services, frame selection, and patient testimonials.
-- [Team](https://senoiaeyecare.com/team): Doctor bios and practice staff.
+- [Home](https://www.senoiaeyecare.com/): Practice overview, services, frame selection, and patient testimonials.
+- [Team](https://www.senoiaeyecare.com/team): Doctor bios and practice staff.
 
 ## Services
 
-- [Comprehensive Eye Exams](https://senoiaeyecare.com/eye-exams): Annual evaluations with advanced retinal imaging. About 45 minutes per exam. Includes FAQ on exam frequency, what to bring, and pediatric scheduling.
-- [Contact Lens Fitting](https://senoiaeyecare.com/contacts): Soft, toric, and multifocal lenses fit in-chair. New wearers welcome.
-- [Pediatric & Family Care](https://senoiaeyecare.com/pediatric-family): Children's exams from age three, with parents in the room. InfantSEE provider (no-cost assessment for babies 6–12 months).
-- [Frames](https://senoiaeyecare.com/frames): Curated frame selection — independent designers from Spain and Chicago alongside American icons. Featured: Maui Jim polarized sunwear.
+- [Comprehensive Eye Exams](https://www.senoiaeyecare.com/eye-exams): Annual evaluations with advanced retinal imaging. About 45 minutes per exam. Includes FAQ on exam frequency, what to bring, and pediatric scheduling.
+- [Contact Lens Fitting](https://www.senoiaeyecare.com/contacts): Soft, toric, and multifocal lenses fit in-chair. New wearers welcome.
+- [Pediatric & Family Care](https://www.senoiaeyecare.com/pediatric-family): Children's exams from age three, with parents in the room. InfantSEE provider (no-cost assessment for babies 6–12 months).
+- [Frames](https://www.senoiaeyecare.com/frames): Curated frame selection — independent designers from Spain and Chicago alongside American icons. Featured: Maui Jim polarized sunwear.
 
 ## Visit
 
-- [Insurance](https://senoiaeyecare.com/insurance): Accepted carriers — VSP, EyeMed, Spectera, Superior, Davis, Medicare, Aetna, Blue Cross Blue Shield, Cigna, UMR, UHC, Humana, and more.
+- [Insurance](https://www.senoiaeyecare.com/insurance): Accepted carriers — VSP, EyeMed, Spectera, Superior, Davis, Medicare, Aetna, Blue Cross Blue Shield, Cigna, UMR, UHC, Humana, and more.
 - Address: 7280 GA-16 Suite F, Senoia, Georgia 30276
 - Phone: (770) 727-6687
 - Email: info@senoiaeyecare.com
@@ -26,10 +26,10 @@ Senoia Eyecare is an independent, doctor-owned optometry practice serving Senoia
 
 ## Booking
 
-- [Book an appointment](https://senoiaeyecare.com/book): Redirects to the Eyefinity scheduler. Patients select exam type, doctor, and time.
+- [Book an appointment](https://www.senoiaeyecare.com/book): Redirects to the Eyefinity scheduler. Patients select exam type, doctor, and time.
 
 ## Optional
 
-- [Accessibility Statement](https://senoiaeyecare.com/accessibility): Website accessibility commitments and how to report a barrier.
-- [Privacy Policy](https://senoiaeyecare.com/privacy): How the website handles visitor information.
+- [Accessibility Statement](https://www.senoiaeyecare.com/accessibility): Website accessibility commitments and how to report a barrier.
+- [Privacy Policy](https://www.senoiaeyecare.com/privacy): How the website handles visitor information.
 - [Facebook](https://www.facebook.com/senoiaeyecare): Practice updates and announcements.

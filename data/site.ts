@@ -3,7 +3,7 @@ import type { SiteConfig } from "./types";
 export const site: SiteConfig = {
   name: "Senoia Eyecare",
   tagline: "Considered eyewear. Comprehensive care.",
-  url: "https://senoiaeyecare.com",
+  url: "https://www.senoiaeyecare.com",
   bookingUrl:
     "https://scheduler.eyefinity.com/index.html?domainName=senoiaeyecare.net",
   marloUrl: "https://meetmarlo.com/patient-signin",
