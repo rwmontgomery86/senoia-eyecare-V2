@@ -8,7 +8,7 @@ import { images } from "@/data/images";
 
 export default function VariantPhotoSplit() {
   return (
-    <section className="bg-paper px-6 py-16 md:px-10 md:py-20 lg:px-16 lg:py-24">
+    <section id="reorder" className="bg-paper px-6 py-16 md:px-10 md:py-20 lg:px-16 lg:py-24">
       <div className="mx-auto grid max-w-[1280px] grid-cols-1 items-center gap-10 md:grid-cols-[1.1fr_1fr] md:gap-16">
         {/* Left: copy column */}
         <div className="flex flex-col gap-7">
