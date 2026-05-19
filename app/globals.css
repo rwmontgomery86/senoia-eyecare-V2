@@ -24,7 +24,8 @@ html {
   scroll-behavior: smooth;
 }
 
-section[id] {
+section[id],
+article[id] {
   scroll-margin-top: 1rem;
 }
 

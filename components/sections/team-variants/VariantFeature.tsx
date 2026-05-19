@@ -10,7 +10,7 @@ export default function VariantFeature() {
   return (
     <div className="bg-paper">
       {/* Page intro */}
-      <section className="px-6 pt-32 pb-20 md:px-10 md:pt-40 md:pb-24 lg:px-16 lg:pt-44 lg:pb-28">
+      <section id="top" className="px-6 pt-32 pb-20 md:px-10 md:pt-40 md:pb-24 lg:px-16 lg:pt-44 lg:pb-28">
         <div className="grid grid-cols-1 gap-10 md:grid-cols-12">
           <div className="md:col-span-2">
             <Eyebrow>Our Team</Eyebrow>
@@ -47,12 +47,13 @@ export default function VariantFeature() {
       </section>
 
       {/* Doctor features — alternating spread */}
-      <section className="border-t border-rule">
+      <section id="doctors" className="border-t border-rule">
         {doctors.map((doc, i) => {
           const photoRight = i % 2 === 1;
           return (
             <article
               key={doc.slug}
+              id={`dr-${doc.slug}`}
               className="border-b border-rule px-6 py-20 md:px-10 md:py-28 lg:px-16 lg:py-32"
             >
               <div className="grid grid-cols-1 gap-10 md:grid-cols-12 md:gap-14 lg:gap-20">
@@ -135,7 +136,7 @@ export default function VariantFeature() {
       </section>
 
       {/* Staff module — "Behind the counter" */}
-      <section className="bg-cream px-6 py-24 md:px-10 md:py-28 lg:px-16 lg:py-32">
+      <section id="staff" className="bg-cream px-6 py-24 md:px-10 md:py-28 lg:px-16 lg:py-32">
         <div className="grid grid-cols-1 gap-10 md:grid-cols-12 md:gap-14">
           <div className="md:col-span-4">
             <Eyebrow>Behind the Counter</Eyebrow>
