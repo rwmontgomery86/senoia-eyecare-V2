@@ -25,4 +25,12 @@ export const staff: StaffMember[] = [
       "The voice you'll hear when you call and the person who'll greet you at the door.",
     photo: "/images/staff/gracie.jpg",
   },
+  {
+    slug: "jessica-moon",
+    name: "Jessica Moon",
+    role: "Technician",
+    oneLiner:
+      "Pre-testing, imaging, and the dozen small measurements that happen before you ever see the doctor.",
+    photo: "/images/staff/jessica.jpg",
+  },
 ];
