@@ -5,7 +5,7 @@ import GoldRule from "@/components/ui/GoldRule";
 
 export default function KnownLimitations() {
   return (
-    <section className="bg-cream px-6 py-24 md:px-10 md:py-28 lg:px-16 lg:py-32">
+    <section data-nav-mode="on-light" className="bg-cream px-6 py-24 md:px-10 md:py-28 lg:px-16 lg:py-32">
       <div className="max-w-[820px]">
         <Eyebrow>Honest about gaps</Eyebrow>
         <h2 className="mt-5 font-display font-medium text-[clamp(2.5rem,5vw,3.5rem)] leading-[1]">

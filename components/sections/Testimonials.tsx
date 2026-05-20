@@ -24,6 +24,7 @@ export default function Testimonials() {
   return (
     <section
       id="words"
+      data-nav-mode="on-light"
       className="bg-cream px-6 py-20 md:px-10 md:py-28 lg:px-16"
     >
       <div className="mx-auto max-w-[1240px]">

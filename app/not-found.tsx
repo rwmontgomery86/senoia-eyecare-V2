@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 
 export default function NotFound() {
   return (
-    <section className="bg-paper px-6 py-32 md:px-10 md:py-40 lg:px-16">
+    <section data-nav-mode="on-light" className="bg-paper px-6 py-32 md:px-10 md:py-40 lg:px-16">
       <div className="mx-auto max-w-[640px] text-center">
         <Eyebrow>404 — Not Found</Eyebrow>
         <h1 className="mt-6 font-display font-medium text-[clamp(3rem,6vw,4.5rem)] leading-[1]">

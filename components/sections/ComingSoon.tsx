@@ -5,7 +5,7 @@ import { site } from "@/data/site";
 
 export default function ComingSoon({ title }: { title: string }) {
   return (
-    <section className="bg-paper px-6 py-32 md:px-10 md:py-40 lg:px-16">
+    <section data-nav-mode="on-light" className="bg-paper px-6 py-32 md:px-10 md:py-40 lg:px-16">
       <div className="mx-auto max-w-[640px] text-center">
         <Eyebrow>{title}</Eyebrow>
         <h1 className="mt-6 font-display font-medium text-[clamp(3rem,6vw,4.5rem)] leading-[1]">

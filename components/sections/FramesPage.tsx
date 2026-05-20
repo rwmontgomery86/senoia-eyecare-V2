@@ -55,6 +55,7 @@ export default function FramesPage() {
       {/* 1 — Full-bleed cinematic hero */}
       <section
         ref={heroRef}
+        data-nav-mode="on-dark"
         className="relative isolate flex min-h-[80vh] flex-col justify-end overflow-hidden bg-ink px-6 pb-20 pt-36 text-inverted-text md:px-10 md:pb-24 md:pt-40 lg:px-16 lg:pb-28 lg:pt-44"
       >
         {/* Striped fallback */}
@@ -121,7 +122,7 @@ export default function FramesPage() {
       </section>
 
       {/* 2 — Place / Light / Fit pillars */}
-      <section className="border-t border-rule bg-paper px-6 py-24 md:px-10 md:py-28 lg:px-16 lg:py-32">
+      <section data-nav-mode="on-light" className="border-t border-rule bg-paper px-6 py-24 md:px-10 md:py-28 lg:px-16 lg:py-32">
         <div className="mx-auto max-w-[1280px]">
           <div className="mb-12 max-w-[900px]">
             <Eyebrow>Three things</Eyebrow>
@@ -165,7 +166,7 @@ export default function FramesPage() {
       </section>
 
       {/* 3 — PolarizedPlus2 statement + 3-up model grid */}
-      <section className="bg-paper px-6 py-24 md:px-10 md:py-28 lg:px-16 lg:py-32">
+      <section data-nav-mode="on-light" className="bg-paper px-6 py-24 md:px-10 md:py-28 lg:px-16 lg:py-32">
         <div className="mx-auto max-w-[1280px]">
           <div className="grid grid-cols-1 gap-10 md:grid-cols-12 md:gap-14 md:items-end">
             <div className="md:col-span-7">
@@ -222,7 +223,7 @@ export default function FramesPage() {
       </section>
 
       {/* 4 — Brand index (sticky-left intro + right 2-col card grid) */}
-      <section className="border-t border-rule bg-cream px-6 py-24 md:px-10 md:py-28 lg:px-16 lg:py-32">
+      <section data-nav-mode="on-light" className="border-t border-rule bg-cream px-6 py-24 md:px-10 md:py-28 lg:px-16 lg:py-32">
         <div className="mx-auto max-w-[1280px]">
           <div className="grid grid-cols-1 gap-12 md:grid-cols-12 md:gap-16">
             <div className="md:col-span-5 md:sticky md:top-32 md:self-start">
@@ -285,7 +286,7 @@ export default function FramesPage() {
       </section>
 
       {/* 5 — Compact styling & fit */}
-      <section className="border-t border-rule bg-paper px-6 py-20 md:px-10 md:py-24 lg:px-16 lg:py-28">
+      <section data-nav-mode="on-light" className="border-t border-rule bg-paper px-6 py-20 md:px-10 md:py-24 lg:px-16 lg:py-28">
         <div className="mx-auto max-w-[1080px]">
           <div className="grid grid-cols-1 gap-10 md:grid-cols-[1fr_auto] md:items-center md:gap-14">
             <div className="max-w-[640px]">

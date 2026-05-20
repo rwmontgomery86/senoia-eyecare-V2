@@ -23,6 +23,7 @@ export default function ContactsHero() {
     <section
       ref={ref}
       id="top"
+      data-nav-mode="on-dark"
       className="relative bg-ink text-inverted-text"
     >
       <div className="lg:hidden">

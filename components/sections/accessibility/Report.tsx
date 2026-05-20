@@ -8,7 +8,7 @@ const LAST_UPDATED = "May 2026";
 
 export default function Report() {
   return (
-    <section className="bg-ink px-6 py-24 text-inverted-text md:px-10 md:py-28 lg:px-16 lg:py-32">
+    <section data-nav-mode="on-dark" className="bg-ink px-6 py-24 text-inverted-text md:px-10 md:py-28 lg:px-16 lg:py-32">
       <div className="max-w-[900px]">
         <Eyebrow tone="accent" symbol={null}>
           Report a barrier

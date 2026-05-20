@@ -7,6 +7,7 @@ export default function LensTypes() {
   return (
     <section
       id="lens-types"
+      data-nav-mode="on-light"
       className="bg-paper px-6 py-24 md:px-10 md:py-28 lg:px-16 lg:py-32"
     >
       <div className="grid grid-cols-1 gap-16 lg:grid-cols-[1fr_2fr] lg:gap-20">

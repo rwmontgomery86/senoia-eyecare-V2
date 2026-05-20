@@ -5,7 +5,7 @@ import { images } from "@/data/images";
 
 export default function Diptych() {
   return (
-    <section className="bg-paper px-6 pb-8 pt-4 md:px-10 lg:px-16">
+    <section data-nav-mode="on-light" className="bg-paper px-6 pb-8 pt-4 md:px-10 lg:px-16">
       <div className="grid grid-cols-1 gap-3 md:grid-cols-2 md:gap-4">
         <FadeUp y={20}>
           <StripedPlaceholder

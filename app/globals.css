@@ -4,6 +4,17 @@
 
 :root {
   color-scheme: light;
+  --nav-height: 80px;
+}
+@media (min-width: 768px) {
+  :root {
+    --nav-height: 112px;
+  }
+}
+@media (min-width: 1024px) {
+  :root {
+    --nav-height: 120px;
+  }
 }
 
 html,
@@ -22,6 +33,7 @@ body {
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: var(--nav-height);
 }
 
 section[id],

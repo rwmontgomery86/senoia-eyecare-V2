@@ -9,6 +9,7 @@ export default function Footer() {
     <footer
       id="footer"
       aria-label="Site footer"
+      data-nav-mode="on-dark"
       className="relative bg-ink px-6 pt-24 text-inverted-text md:px-10 lg:px-14"
     >
       <div className="mx-auto max-w-[1440px]">

@@ -5,7 +5,7 @@ import FadeUp from "@/components/ui/FadeUp";
 
 export default function AccessibilityHero() {
   return (
-    <section className="bg-paper px-6 pb-20 pt-36 md:px-10 md:pb-24 md:pt-40 lg:px-16 lg:pb-28 lg:pt-44">
+    <section data-nav-mode="on-light" className="bg-paper px-6 pb-20 pt-36 md:px-10 md:pb-24 md:pt-40 lg:px-16 lg:pb-28 lg:pt-44">
       <div className="max-w-[1100px]">
         <Eyebrow>Access</Eyebrow>
         <h1 className="mt-6 font-display font-medium text-[clamp(2.75rem,7vw,5.75rem)] leading-[0.98] tracking-[-0.01em]">

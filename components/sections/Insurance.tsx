@@ -11,6 +11,7 @@ export default function Insurance() {
   return (
     <section
       id="insurance"
+      data-nav-mode="on-dark"
       className="bg-ink text-inverted-text px-6 py-24 md:px-10 md:py-28 lg:px-16 lg:py-32"
     >
       <div className="grid grid-cols-1 items-center gap-16 lg:grid-cols-[1fr_1.4fr] lg:gap-20">

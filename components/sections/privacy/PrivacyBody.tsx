@@ -39,7 +39,7 @@ function Section({
 
 export default function PrivacyBody() {
   return (
-    <section className="bg-paper px-6 pb-32 md:px-10 lg:px-16">
+    <section data-nav-mode="on-light" className="bg-paper px-6 pb-32 md:px-10 lg:px-16">
       <div className="mx-auto max-w-[680px] space-y-16 md:space-y-20">
         <Section number="01" title="What we collect" first>
           <p>

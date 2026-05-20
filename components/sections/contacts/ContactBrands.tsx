@@ -7,6 +7,7 @@ export default function ContactBrands() {
   return (
     <section
       id="brands"
+      data-nav-mode="on-light"
       className="bg-paper px-6 py-24 md:px-10 md:py-28 lg:px-16 lg:py-32"
     >
       {/* Header — centered, narrow */}

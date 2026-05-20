@@ -36,7 +36,7 @@ const grid = [
 
 export default function Frames() {
   return (
-    <section id="frames" className="bg-paper px-6 py-24 md:px-10 md:py-28 lg:px-16 lg:py-32">
+    <section id="frames" data-nav-mode="on-light" className="bg-paper px-6 py-24 md:px-10 md:py-28 lg:px-16 lg:py-32">
       {/* MOBILE — cinematic banner + 2x2 tech ledger */}
       <div className="md:hidden">
         <div className="mb-8">

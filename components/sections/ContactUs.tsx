@@ -7,7 +7,7 @@ export default function ContactUs() {
   const fullAddress = `${site.address.line1}, ${site.address.line2}`;
 
   return (
-    <section className="bg-ink pt-20 md:pt-24 lg:pt-28">
+    <section data-nav-mode="on-dark" className="bg-ink pt-20 md:pt-24 lg:pt-28">
       <div className="grid grid-cols-1 md:min-h-[820px] md:grid-cols-2">
         {/* Left — dark info panel */}
         <div className="flex flex-col justify-center gap-10 bg-ink px-6 py-16 md:gap-12 md:px-12 md:py-20 lg:px-16 lg:py-24">

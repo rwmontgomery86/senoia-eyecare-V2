@@ -46,7 +46,7 @@ const faqs = [
 
 export default function InsuranceLedger() {
   return (
-    <section className="relative overflow-x-clip bg-paper">
+    <section data-nav-mode="on-light" className="relative overflow-x-clip bg-paper">
       <div className="mx-auto max-w-[1440px] px-6 py-20 md:px-10 md:py-24 lg:grid lg:grid-cols-[minmax(0,38%)_1fr] lg:gap-16 lg:px-16 lg:py-28">
         {/* LEFT — sticky utility column */}
         <aside className="lg:sticky lg:top-24 lg:self-start lg:max-h-[calc(100vh-7rem)] lg:overflow-y-auto lg:pr-2">

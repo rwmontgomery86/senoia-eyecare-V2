@@ -28,7 +28,7 @@ export default function Hero() {
   const contentOpacity = useTransform(scrollYProgress, [0, 0.7], [1, 0]);
 
   return (
-    <section ref={ref} id="top" className="relative bg-ink text-inverted-text">
+    <section ref={ref} id="top" data-nav-mode="on-dark" className="relative bg-ink text-inverted-text">
       {/* Full-bleed photo block */}
       <div className="relative h-[100svh] min-h-[640px] w-full overflow-hidden">
         <motion.div

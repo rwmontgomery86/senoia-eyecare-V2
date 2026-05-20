@@ -21,6 +21,7 @@ export default function Pediatric() {
     <section
       ref={ref}
       id="pediatric"
+      data-nav-mode="on-dark"
       className="relative isolate overflow-hidden bg-ink px-6 py-24 text-inverted-text md:px-10 md:py-28 lg:px-16 lg:py-32"
     >
       {/* Striped fallback (visible if no image set) */}

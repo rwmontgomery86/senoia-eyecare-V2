@@ -20,6 +20,7 @@ export default function BookingCTA() {
     <section
       ref={ref}
       id="book"
+      data-nav-mode="on-dark"
       className="relative isolate overflow-hidden bg-ink px-6 py-32 text-inverted-text md:px-10 md:py-44 lg:px-16 lg:py-52"
     >
       {/* Striped fallback (visible if no image set) */}

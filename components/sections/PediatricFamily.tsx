@@ -35,7 +35,7 @@ const stages = [
 
 export default function PediatricFamily() {
   return (
-    <section className="bg-paper">
+    <section data-nav-mode="on-light" className="bg-paper">
       {/* Chapter-opener hero — wide photo + overlay copy */}
       <div className="relative">
         <StripedPlaceholder
@@ -157,7 +157,7 @@ export default function PediatricFamily() {
       </div>
 
       {/* Family-beat inset */}
-      <div className="bg-cream px-6 py-20 md:px-10 md:py-28 lg:px-16">
+      <div data-nav-mode="on-light" className="bg-cream px-6 py-20 md:px-10 md:py-28 lg:px-16">
         <div className="mx-auto grid max-w-[1280px] grid-cols-1 gap-10 md:grid-cols-12 md:items-center md:gap-14">
           <div className="md:col-span-7">
             <FadeUp y={20}>
@@ -202,7 +202,7 @@ export default function PediatricFamily() {
       </div>
 
       {/* Closing CTA — dark */}
-      <div className="bg-ink px-6 py-24 text-inverted-text md:px-10 md:py-32 lg:px-16">
+      <div data-nav-mode="on-dark" className="bg-ink px-6 py-24 text-inverted-text md:px-10 md:py-32 lg:px-16">
         <div className="mx-auto max-w-[1280px]">
           <Eyebrow tone="inverted-muted">Book</Eyebrow>
           <h2 className="mt-6 max-w-[900px] font-display text-[clamp(2.25rem,4.6vw,3.75rem)] font-medium leading-[1.05]">

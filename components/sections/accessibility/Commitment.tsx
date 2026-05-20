@@ -4,7 +4,7 @@ import FadeUp from "@/components/ui/FadeUp";
 
 export default function Commitment() {
   return (
-    <section className="bg-cream px-6 py-24 md:px-10 md:py-28 lg:px-16 lg:py-32">
+    <section data-nav-mode="on-light" className="bg-cream px-6 py-24 md:px-10 md:py-28 lg:px-16 lg:py-32">
       <div className="grid grid-cols-1 gap-16 lg:grid-cols-[1fr_2fr] lg:gap-20">
         <div>
           <Eyebrow>Where we stand</Eyebrow>
