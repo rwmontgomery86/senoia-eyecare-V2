@@ -19,7 +19,10 @@ const AI_BOTS = [
   "LinkedInBot",
 ];
 
-const DISALLOW = ["/*-variants/", "/api/", "/_next/"];
+// Note: do NOT disallow /_next/ — Googlebot needs to fetch /_next/static/
+// (JS, CSS, fonts) and /_next/image (optimized images) to render and index
+// the site correctly. Only block routes with no rendering value.
+const DISALLOW = ["/*-variants/", "/api/", "/_api/"];
 
 export default function robots(): MetadataRoute.Robots {
   return {
