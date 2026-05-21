@@ -52,6 +52,72 @@ const nextConfig = {
         destination: "/team",
         permanent: true,
       },
+      {
+        source: "/team/gracie-mcdaniel",
+        destination: "/team",
+        permanent: true,
+      },
+      // Legacy Wix service pages → current pages
+      {
+        source: "/services/prescription-glasses",
+        destination: "/frames",
+        permanent: true,
+      },
+      {
+        source: "/services/ocular-conditions",
+        destination: "/eye-exams",
+        permanent: true,
+      },
+      {
+        source: "/services/contact-lenses",
+        destination: "/contacts",
+        permanent: true,
+      },
+      {
+        source: "/contact-lens-exam-senoia-ga",
+        destination: "/contacts",
+        permanent: true,
+      },
+      // Legacy Wix blog index & category pages → current pages
+      { source: "/blog", destination: "/", permanent: true },
+      {
+        source: "/blog/categories/eye-health",
+        destination: "/eye-exams",
+        permanent: true,
+      },
+      // Legacy Wix posts → closest current page
+      {
+        source: "/post/childrens-eye-exams",
+        destination: "/pediatric-family",
+        permanent: true,
+      },
+      {
+        source: "/post/comprehensive-eye-exams",
+        destination: "/eye-exams",
+        permanent: true,
+      },
+      {
+        source: "/post/complete-eye-exam",
+        destination: "/eye-exams",
+        permanent: true,
+      },
+      {
+        source: "/post/diabetic-eye-exams",
+        destination: "/eye-exams",
+        permanent: true,
+      },
+      {
+        source: "/post/meta-ray-bans",
+        destination: "/frames",
+        permanent: true,
+      },
+      {
+        source: "/post/beginning-of-the-year-benefits",
+        destination: "/insurance",
+        permanent: true,
+      },
+      // No /patient-forms route yet → homepage fallback
+      { source: "/patient-forms", destination: "/", permanent: true },
     ];
   },
 };
