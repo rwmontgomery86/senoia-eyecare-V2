@@ -25,6 +25,17 @@ const nextConfig = {
         destination: "/eye-exams",
         permanent: true,
       },
+      // Legacy Wix category pages → current pages
+      {
+        source: "/blog/categories/insurance",
+        destination: "/insurance",
+        permanent: true,
+      },
+      {
+        source: "/blog/categories/eyewear",
+        destination: "/frames",
+        permanent: true,
+      },
       // Legacy Wix team pages → /team
       {
         source: "/team/dr.-taylor-williamson",
@@ -33,6 +44,11 @@ const nextConfig = {
       },
       {
         source: "/team/vicki-wrege",
+        destination: "/team",
+        permanent: true,
+      },
+      {
+        source: "/team/melinda-stevenson",
         destination: "/team",
         permanent: true,
       },
