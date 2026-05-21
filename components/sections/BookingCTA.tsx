@@ -41,7 +41,7 @@ export default function BookingCTA() {
         >
           <Image
             src={images.bookingBackground}
-            alt=""
+            alt="Inside Senoia Eyecare"
             fill
             sizes="100vw"
             quality={85}
