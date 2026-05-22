@@ -54,6 +54,30 @@ export type StaffMember = {
   photo: string | null;
 };
 
+export type ActivityFrame = {
+  brand: string;
+  model: string;
+  image: string | null;
+  isLead?: boolean;
+};
+
+export type ActivitySection = {
+  heading: string;
+  body: string;
+};
+
+export type Activity = {
+  slug: string;
+  title: string;
+  headline: string;
+  summary: string;
+  intro: string;
+  sections: ActivitySection[];
+  heroImage: string | null;
+  frames: ActivityFrame[];
+  featured: boolean;
+};
+
 export type SiteConfig = {
   name: string;
   tagline: string;

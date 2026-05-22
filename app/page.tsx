@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Hero from "@/components/sections/Hero";
 import Services from "@/components/sections/Services";
 import Frames from "@/components/sections/Frames";
+import MadeFor from "@/components/sections/MadeFor";
 import Testimonials from "@/components/sections/Testimonials";
 import Insurance from "@/components/sections/Insurance";
 import Visit from "@/components/sections/Visit";
@@ -28,9 +29,10 @@ export default function Home() {
       <Hero />
       <Services />
       <Frames />
-      <Testimonials />
+      <MadeFor />
       <Insurance />
       <Visit />
+      <Testimonials />
       <BookingCTA />
     </>
   );
