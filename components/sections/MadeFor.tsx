@@ -11,7 +11,7 @@ export default function MadeFor() {
   const rest = activity.frames.filter((f) => f !== lead);
 
   return (
-    <section className="bg-paper px-6 py-24 md:px-10 md:py-28 lg:px-16 lg:py-32">
+    <section className="bg-cream px-6 py-24 md:px-10 md:py-28 lg:px-16 lg:py-32">
       <div className="mx-auto max-w-[1440px]">
         <div className="grid grid-cols-1 gap-12 lg:grid-cols-2 lg:gap-16">
           {/* Left — portrait hero */}
@@ -73,26 +73,28 @@ export default function MadeFor() {
                   </div>
 
                   {/* Named list */}
-                  <ul className="border-t border-rule">
-                    {rest.map((f) => (
-                      <li
-                        key={`${f.brand}-${f.model}`}
-                        className="flex items-baseline gap-3 border-b border-rule py-4"
-                      >
-                        <span
-                          aria-hidden
-                          className="font-mono text-[10px] text-accent"
+                  {rest.length > 0 && (
+                    <ul className="border-t border-rule">
+                      {rest.map((f) => (
+                        <li
+                          key={`${f.brand}-${f.model}`}
+                          className="flex items-baseline gap-3 border-b border-rule py-4"
                         >
-                          —
-                        </span>
-                        <span className="font-display text-[17px]">
-                          {f.brand}
-                          <span className="text-muted"> · </span>
-                          <em className="italic">{f.model}</em>
-                        </span>
-                      </li>
-                    ))}
-                  </ul>
+                          <span
+                            aria-hidden
+                            className="font-mono text-[10px] text-accent"
+                          >
+                            —
+                          </span>
+                          <span className="font-display text-[17px]">
+                            {f.brand}
+                            <span className="text-muted"> · </span>
+                            <em className="italic">{f.model}</em>
+                          </span>
+                        </li>
+                      ))}
+                    </ul>
+                  )}
                 </div>
               </div>
             </FadeUp>

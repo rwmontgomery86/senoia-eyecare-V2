@@ -19,11 +19,14 @@ export const activities: Activity[] = [
         body: "A wraparound shape closes the gap at your temples that lets in wind, dust, and grit. Grippy temples keep the frame steady through cadence changes and out-of-the-saddle efforts. We fit and adjust in the chair — every face is different, and the right curve, length, and tension is the difference between glasses you forget you're wearing and the ones you keep pushing back up.",
       },
     ],
-    heroImage: null,
+    heroImage: "/images/activities/cycling/home-page-main.jpg",
     frames: [
-      { brand: "Maui Jim", model: "Hookipa", image: null, isLead: true },
-      { brand: "Oakley", model: "Sutro", image: null },
-      { brand: "Costa", model: "Tuna Alley", image: null },
+      {
+        brand: "Tifosi",
+        model: "Rivit",
+        image: "/images/activities/cycling/home-page-glasses.jpg",
+        isLead: true,
+      },
     ],
     featured: true,
   },
