@@ -117,7 +117,7 @@ export default function Frames() {
       <div className="hidden md:block">
         <div className="mx-auto max-w-[1440px]">
           {/* Top half — typographic poster */}
-          <div className="flex min-h-[60vh] flex-col justify-end pb-12 md:pb-20">
+          <div className="pb-12 md:pb-20">
             {/* Marginalia */}
             <div className="mb-10 flex items-start justify-between gap-6">
               <Eyebrow>Maui Jim · № 01</Eyebrow>
