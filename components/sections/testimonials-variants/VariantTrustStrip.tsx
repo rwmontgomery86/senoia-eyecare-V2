@@ -1,9 +1,8 @@
 import Eyebrow from "@/components/ui/Eyebrow";
+import { site } from "@/data/site";
 
 const RATING = 4.9;
 const REVIEW_COUNT = 129;
-// TODO: add googleReviewsUrl to data/site.ts and read from there.
-const GOOGLE_REVIEWS_URL = "#";
 
 const quotes = [
   {
@@ -37,7 +36,7 @@ export default function VariantTrustStrip() {
             </div>
             <Stars label={`${RATING} out of 5 stars`} />
             <a
-              href={GOOGLE_REVIEWS_URL}
+              href={site.googleReviewsUrl}
               target="_blank"
               rel="noopener noreferrer"
               className="group mt-1 inline-flex items-baseline gap-2 font-mono text-[11px] uppercase tracking-eyebrow text-ink transition-colors duration-200 ease-expo hover:text-accent"

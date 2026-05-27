@@ -61,6 +61,7 @@ export type SiteConfig = {
   bookingUrl: string;
   marloUrl: string;
   mapEmbedUrl: string;
+  googleReviewsUrl: string;
   phone: { display: string; tel: string };
   fax: string;
   email: string;
