@@ -53,7 +53,7 @@ export default function Pediatric() {
         >
           <Image
             src={images.eyeExamsPediatric}
-            alt=""
+            alt="A child having a gentle pediatric eye exam at Senoia Eyecare"
             fill
             sizes="100vw"
             quality={85}

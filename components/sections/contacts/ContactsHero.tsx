@@ -44,7 +44,7 @@ export default function ContactsHero() {
               Contact Lens Fitting
             </motion.div>
 
-            <h1 className="mt-8 font-display font-medium text-inverted-text text-[clamp(2.75rem,7.5vw,5.75rem)] leading-[0.98] tracking-[-0.02em]">
+            <h2 className="mt-8 font-display font-medium text-inverted-text text-[clamp(2.75rem,7.5vw,5.75rem)] leading-[0.98] tracking-[-0.02em]">
               <WordReveal
                 as="span"
                 inView={false}
@@ -62,7 +62,7 @@ export default function ContactsHero() {
                 ]}
                 className="block"
               />
-            </h1>
+            </h2>
 
             <motion.p
               initial={{ opacity: 0, y: 12 }}
