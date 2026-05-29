@@ -26,8 +26,26 @@ export const activities: Activity[] = [
         model: "Rivit",
         image: "/images/activities/cycling/home-page-glasses.jpg",
         isLead: true,
+        note: "The wraparound that disappears on a long descent.",
+      },
+      {
+        brand: "Maui Jim",
+        model: "Ho'okipa",
+        image: "/images/activities/cycling/maui-jim-activity.jpg",
+        note: "Rimless and featherlight, with polarized glass that calms the glare.",
       },
     ],
+    heroSpecs: [
+      { label: "Lens", value: "Polarized" },
+      { label: "Fit", value: "Wraparound" },
+      { label: "Lead frame", value: "Tifosi Rivit" },
+    ],
+    recommendedBrands: [
+      { name: "Tifosi", note: "Sport fit that stays put on every climb and descent." },
+      { name: "Maui Jim", note: "Polarized glass that cuts the glare off wet asphalt." },
+    ],
+    recommendedBrandsIntro:
+      "Two makers we trust for the road — chosen less for the name than for how they hold up mile after mile.",
     featured: true,
   },
 ];

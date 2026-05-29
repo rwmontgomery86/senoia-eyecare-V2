@@ -59,11 +59,24 @@ export type ActivityFrame = {
   model: string;
   image: string | null;
   isLead?: boolean;
+  /** Activity-specific 'why this frame' line for the frames section. */
+  note?: string;
 };
 
 export type ActivitySection = {
   heading: string;
   body: string;
+};
+
+export type ActivitySpec = {
+  label: string;
+  value: string;
+};
+
+export type RecommendedBrand = {
+  name: string;
+  /** Activity-specific subheadline; falls back to the brand's global tag. */
+  note?: string;
 };
 
 export type Activity = {
@@ -73,6 +86,9 @@ export type Activity = {
   summary: string;
   intro: string;
   sections: ActivitySection[];
+  heroSpecs?: ActivitySpec[];
+  recommendedBrands?: RecommendedBrand[];
+  recommendedBrandsIntro?: string;
   heroImage: string | null;
   frames: ActivityFrame[];
   featured: boolean;
