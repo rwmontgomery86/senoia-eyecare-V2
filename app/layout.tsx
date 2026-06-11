@@ -12,7 +12,9 @@ import {
 import "./globals.css";
 
 const GA_ID = process.env.NEXT_PUBLIC_GA_ID;
-const GTM_ID = process.env.NEXT_PUBLIC_GTM_ID;
+// GTM loads on every page. Defaults to the live container so it ships through
+// the normal build without a host env var; NEXT_PUBLIC_GTM_ID can override it.
+const GTM_ID = process.env.NEXT_PUBLIC_GTM_ID ?? "GTM-585ZN85H";
 const META_PIXEL_ID = process.env.NEXT_PUBLIC_META_PIXEL_ID;
 
 const display = Cormorant_Garamond({
@@ -96,8 +98,19 @@ export default function RootLayout({
       lang="en"
       className={`${display.variable} ${body.variable} ${mono.variable}`}
     >
-      {GTM_ID ? <GoogleTagManager gtmId={GTM_ID} /> : null}
+      {/* Google Tag Manager — injects the gtm.js loader as high as possible */}
+      <GoogleTagManager gtmId={GTM_ID} />
       <body className="bg-paper text-ink font-body antialiased">
+        {/* Google Tag Manager (noscript) — must sit immediately after <body> */}
+        <noscript>
+          <iframe
+            src={`https://www.googletagmanager.com/ns.html?id=${GTM_ID}`}
+            height="0"
+            width="0"
+            style={{ display: "none", visibility: "hidden" }}
+            title="Google Tag Manager"
+          />
+        </noscript>
         {META_PIXEL_ID ? <MetaPixel pixelId={META_PIXEL_ID} /> : null}
         <Nav />
         <main>{children}</main>
