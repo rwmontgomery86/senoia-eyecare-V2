@@ -176,6 +176,28 @@ export const images = {
   pedFamFamilyInset: "/images/pediatric/family-inset.jpg" as string | null,
 
   /**
+   * Specialty Lenses — Act I portrait (school-age kid wearing glasses).
+   * 4:5 vertical, ~1200×1500px. Warm, editorial — not clinical stock.
+   * Drop file at: public/images/specialty-lenses/myopia-kid.jpg
+   */
+  specialtyMyopia: null as string | null,
+
+  /**
+   * Specialty Lenses — Act II wide plate (outdoor, color-saturated scene;
+   * the photo that carries the color against the ink section).
+   * 21:9 wide, 2000px+.
+   * Drop file at: public/images/specialty-lenses/enchroma-color.jpg
+   */
+  specialtyEnchroma: null as string | null,
+
+  /**
+   * Specialty Lenses — EnChroma demo detail (demo pairs tray / color plates).
+   * 4:5 vertical, ~1200×1500px.
+   * Drop file at: public/images/specialty-lenses/enchroma-demo.jpg
+   */
+  specialtyDemo: null as string | null,
+
+  /**
    * Lookbook library — editorial photography ported from the previous site.
    * Available for use in Frames, About, or other sections; not currently
    * referenced by the homepage hero.

@@ -25,4 +25,12 @@ export const services: Service[] = [
       "Gentle exams for kids, with sight-development tracking from age three. Parents stay in the room.",
     href: "/pediatric-family",
   },
+  {
+    slug: "specialty-lenses",
+    number: "04",
+    title: "Specialty Lenses",
+    summary:
+      "Essilor Stellest lenses that slow myopia in growing kids, and EnChroma glasses for red-green color blindness. Demo pairs in the shop — walk-ins welcome.",
+    href: "/specialty-lenses",
+  },
 ];
