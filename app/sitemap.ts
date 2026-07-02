@@ -12,6 +12,7 @@ const PRODUCTION_ROUTES: Route[] = [
   { path: "/eye-exams", priority: 0.9, changeFrequency: "monthly" },
   { path: "/contacts", priority: 0.9, changeFrequency: "monthly" },
   { path: "/pediatric-family", priority: 0.9, changeFrequency: "monthly" },
+  { path: "/specialty-lenses", priority: 0.9, changeFrequency: "monthly" },
   { path: "/frames", priority: 0.8, changeFrequency: "monthly" },
   { path: "/team", priority: 0.7, changeFrequency: "monthly" },
   { path: "/insurance", priority: 0.7, changeFrequency: "monthly" },

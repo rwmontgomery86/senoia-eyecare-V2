@@ -24,6 +24,12 @@ export type Faq = {
   answer: string;
 };
 
+export type FeatureCard = {
+  eyebrow: string;
+  title: string;
+  body: string;
+};
+
 export type Brand = {
   name: string;
   tag: string;

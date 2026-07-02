@@ -100,6 +100,11 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="/specialty-lenses" className="transition-colors duration-200 ease-expo hover:text-accent">
+                  Specialty lenses
+                </Link>
+              </li>
+              <li>
                 <Link href="/team" className="transition-colors duration-200 ease-expo hover:text-accent">
                   Team
                 </Link>
